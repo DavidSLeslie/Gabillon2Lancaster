@@ -19,7 +19,7 @@
 \usepackage{hyperref}
 
 \newcommand{\TODO}[1]{{\textcolor{red}{[\textbf{TODO:} #1]}}}
-\newcommand{\acronym}{{\sc YourAcronym}\xspace}
+\newcommand{\acronym}{{\sc OSEGA}\xspace}
 \titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
@@ -30,13 +30,13 @@
 \let\oldfootnotesize\footnotesize
 \renewcommand{\footnotesize}{\fontsize{8bp}{1em}\selectfont}
 \renewcommand{\cite}{\autocite} % citations in footnotes
-\bibliography{bibliography}
+\bibliography{biblio}
 
 \headheight=14pt
 
 \hypersetup{
     pdftitle={H2020-MSCA-IF-2014},    % title
-    pdfauthor={Jos\'e Pedro Magalh\~aes},
+    pdfauthor={Victor Gabillon},
     colorlinks=true,
     citecolor=black,
     linkcolor=black,
@@ -154,6 +154,8 @@ Note that:
 \section{Excellence}
 \label{sec:excellence}
 
+\TODO{Convince the reader that this is state of the art, important, timely and relevant.  It needs to demonstrate quality and innovation.  There needs to be some detail on the methodological approach.  We need to give some specifics on complementary skills development (in particular leadership), and give clarity and specifics on how VG will reach independence.}
+
 Please note that the principles of the European Charter for Researchers and Code of Conduct for the Recruitment of Researchers promoting open recruitment and attractive working conditions are expected to be endorsed and applied by all beneficiaries in the Marie Sklodowska-Curie actions.
 
 \subsection{Quality, innovative aspects and credibility of the research (including inter/multidisciplinary aspects)}
@@ -167,19 +169,110 @@ You should develop your proposal according to the following lines:
 \end{itemize}
 Explain how the high-quality, novel research is the most likely to open up the best career possibilities for the Experienced Researcher and new collaboration opportunities for the host organisation(s).
 
+As a solid mathematical framework to model strategic decision making, game theory has proved useful in many real-world applications from economics and political science to logic, computer science and psychology. 
+Security resource allocations and scheduling problems comprise yet another application area of critical concern, that has recently been shown to greatly benefit from game-theoretic approaches.
+Since 2007, the so-called ARMOR software \cite{pita2008deployed} is used at the Los Angeles International Airport (LAX) to effectively determine 
+checkpoints on the roadways leading to the airport, and to canine patrol routes within terminals. 
+Similarly, such programs as IRIS \cite{tsai2009iris}, PROTECT \cite{shieh2012protect}, and TRUSTS \cite{yin2012trusts} are respectively being deployed at the US Federal Air Marshals, the US coast guard patrolling, and the Los Angeles Metro system's fare inspection strategy. These methods, while being remarkably effective in their corresponding application arenas, usually rely on a pre-defined model of the environment. However, such information may in general not be available in many real-world scenarios. A key objective forming the basis of this grant proposal, is thus to design efficient and theoretically sound, data-driven methods that can actively interact with the environment to {\em learn} a fair model through repeated games. As discussed in the sequel, this may be achieved in an online fashion or through an exploration phase prior to the algorithm's final launch.  
+
+From a game-theoretic perspective, a security problem is viewed as a two-player game that captures the interaction between a defender (e.g., border patrols, metro inspectors, network administrators) and an attacker (e.g., terrorists/drug smugglers, illegal metro users, malicious cyber attackers). The action of the defender (attacker) is defined as selecting a subset of targets to protect (attack). For each defender/attacker action pair, utilities are defined as the players' gain or loss, and the players' objectives are to maximise their corresponding pay-offs. From the defender's perspective, this corresponds to efficiently allocating a limited number of resources to secure some predefined targets from the attacker. 
+%The defender allocates a limited number of resources to secure some predefined target, which may under threat by the attacker. 
+Solutions to such games rely on randomised strategies, making the defender's scheme highly unpredictable for the attacker, thus giving rise to a significant advantage over the original mechanisms that are based on deterministic human schedulers. In the case of games that are fully competitive between the two players  (i.e. the so-called zero-sum games), these methods are provably robust in that they provide guaranteed performance against {\em any} possible attacker. In this case, such guarantees hold, even if the defender's strategy is completely revealed to the attacker.  
+The extension of this guarantee to a more general (non zero-sum) game is provided by Stackelberg equilibrium, a notion that generalises the famous Nash equilibrium \cite{korzhyk2011stackelberg}. 
+%Beyond these fundamental results, 
+%some questions forming the primary focus of research in security games have been scalability, robustness with respect to uncertainty on the players utilities, or devising strategies that take advantage of the attacker's potentially limited rationality or bounded memory\cite{tambe2012game}. 
+
+\textbf{Related Work.}
+Some of the main issues forming the primary focus of research in security games have been scalability, or devising strategies that take advantage of the attacker's potentially limited rationality or bounded memory\cite{tambe2012game}. Another important research goal that has been extensively addressed is to devise methods that are robust with respect to uncertainty about the environment\cite{Nguyen14RO, aghassi2006robust}.
+However, little has been done to generalise the framework to a more realistic setting where the player's objective includes to actively learn the unknown environment. Achieving this goal is indeed crucial, since algorithms that make use of environmental knowledge are arguably more reliable than those merely designed to be robust against this lack of information. With this motivation, some interesting advancements have recently been made through links with optimisation and machine learning methods. 
+These methods focus mostly on the case where the attacker's preferences are not fully known and are thus to be learned; the learning objective is achieved through a repeated a game.  \cite{blum2014learning, letchford2009learning} propose analyses in terms of the number of required queries to learn the optimal defender's strategy. 
+\cite{Marecki12PR, qian2014online} take a Bayesian approach where, given a prior distribution, planning techniques based on Partially Observable Markov Decision Processes (POMDPs) are used to update the posterior over the adversary's preferences.
+The main theoretical drawback of this planning method is in that the algorithm is based on Upper Confidence Trees (UCT), which, as shown by  \cite{munos2014bandits}, are provably sub-optimal. 
+Recently an extended analysis is given by \cite{Balcan15CR}  for the case of multiple attackers, where at each round of the game, a single attacker is chosen adversarially from a fixed, finite, set of known attackers. The latter work shows strong connections with adversarial bandit theory. 
+
+%\textbf{Motivation.} %%%V what can I bring
+
+
+\textbf{Main Goal.} The purpose of this proposal is extend the effort to bring machine learning techniques 
+to apply security games in a broad range of real world situations.
+Our goal is to have a theoretically sound approach by designing efficient algorithms for which we can provide finite sample analysis.
+Stochastic assumptions will be made when dealing with noise in the model and adversarial assumption when dealing with the adversary to make our approach both realistic and robust.
+One difference that we want to explore is that, contrary to the previously mentioned approaches, where the uncertainty is  about the attackers' utilities, we will explore the case where the uncertainty is on the utilities of the defender. This for instance happens when we can not assess for sure the precise return of a given action (checkpoint might not stop deterministically the attacks and the probability of success needs to be determined, here learned).
+We can also look to different formulations of the games that corresponds to real world possibilities or requirements: we might be required to learn defence strategies that are not necessarily the best in expectation but instead also guarantee not to possess large variances in their performance. Here we plan to make connection with risk averse learning algorithm. Another possibility is that in some situation we do not want the learning process to happen during the use of the program but before hand. Then we can assume that we use of a pre launch exploration phase where we try to learned as precisely as possible the model given some budget constraint or some targeted performance guarantees. Extending the previous approaches to complex problem that involves some combinatorial structure is also important.
+
+% (based on POMDPs and bandits) \cite{Blum15LP, Balcan15CR, qian2014online}.
+
+
+
+
+\textbf{Objective 1 Pure exploration in Stackelberg games}
+As explained above, it is of interest to address the case where the  defender does not have the complete knowledge of  the efficiency of its actions  but instead actually need to learn while playing or during a preparatory phase. Here we address the question when the defender is given a preparatory phase during which he can explore his own utility and assess them though experiments. This for instance mean that he can run tests of the security in a variety of predetermined attack scenario and therefore  probe his own probability of defence. The objective of this  approach is to determine  the best strategy during a given exploration phase and  is therefore  closely related to the general theory of optimisation and has been study in the discrete context of multi arm bandit as pure exploration problems \cite{Audibert10BA}. This initial work has been extended in a flurry variant setting where one tries to find the best(s) arms.
+Victor has a nice expertise in that and has participated to the extension and application of such a framework in more and more complex problem (cite my work?) and is working on extension to combinatorial bandits that would improve upon the seminal work by Chen. Taking into account the particular  structure of the problem will be necessary when dealing with Stackelberg equilibrium in security games. There the function to optimise is even more complex.
+One first step is to relax the problem as shown in Krause et al finding the best response to a given adversary. This is known to be is NP hard problem  but can be solve almost optimally be a greedy algorithm thank to a sub modularity property of the problem. This gives rise to a first objective which would be to learning optimise stochastic submodular function under a pure exploration setting.
+Note that I worked on similar subject with learning in submodular functions.
+
+connections with risk averse (Cite the work of Amir Sani) maybe a separate section for this.
+talk about the classical cumulative regret setting also!
+
+\textbf{Objective 2 Learning  more complex adversarially chosen attacker in  Stakleberg}
+The idea would be to  extend the work of Balcan using more complex bandit algorithms. They use a version with k known attackers. We can assume that k is extremely large but there is some  structure that permits us to use for instance combinatorial bandits.
+
+
+
+\textbf{Objective 3 Repeated Network Security Games}
+The security issue naturally has application in graph problem that model the network of roads/ connection between computers that agents might need to secure. Therefore there has been study that apply game theory to this problems. For instance it has been used to monitor road barrage in mumbai (connection) The goal is there to put some check point on a road to stop some terrorist. Its a one shot game where you try to minimise the probability of the player to pass.  Utilities are not really defined and complex here You just want to maximise the probability of catching the attacker. We are interested in a version of this game that is repeated . Everyday the same problem arises. We would minimise the cumulative regret. Therefore the defender can be adaptive and if the attacker is not smart and repeat always the same plan we will catch him often (not totally a worse case scenario). This can be seen actually has a specific problem of adversarial combinatorial bandits where the  attacker is limited to a very specific structure of losses which are path in a graph. We can expect to use the specificity of the graph by using some result from spectral graph theory. Maybe also we can use this theory to solve some issue with the scalability of the algorithm.
+
+
+
+
+
+%Or say that the approach that do only rarely propose strong theoretical results (to the notable exception of Blum)
+%like \cite{Marecki12PR} (which by the way use a theoretically not sound algorithm UCT) 
+
+
+
+
+
+
+%We propose in this grant to explore the connection with machine learning that involves online learning. In a lot of real world problem all the parameter of the problem are not known in advances and are potentially learnt online while solving the problem (give good example!!) It can be for instance that we do not know the capacity of some of the material or we do not know what type of value the attacker are trying to maximise. 
+
+%Or say that the approach that do only rarely propose strong theoretical results (to the notable exception of Blum)
+%like \cite{Marecki12PR} (which by the way use a theoretically not sound algorithm UCT) 
 \subsection{Clarity and quality of transfer of knowledge/training for the development of the researcher in light of the research objectives}
 \label{sec:transfer}
 
-Outline how a two way transfer of knowledge will occur between the researcher and the host institution, in view of their future development and past experience: (please see Section 5.2 of this Guide):
+{\em Outline how a two way transfer of knowledge will occur between the researcher and the host institution, in view of their future development and past experience: (please see Section 5.2 of this Guide):
 \begin{itemize}
 \item Explain how the Experienced Researcher will gain new knowledge during the fellowship at the hosting organisation(s)
 \item Outline the previously acquired knowledge and skills that the researcher will transfer to the host organisation
 \end{itemize}
+}
 
+The overall trianing objective is to significantly develop Dr Gabillon's scientific, organisational, communication and technology transfer skills.  This will enable him to continue building his portfolio of outstanding research to attain a position of independence and gain recognition in the international research community.
+
+The proposed project is primarily a research project, and the main training objectives are to enhance the fellow's scientific skills. Dr Gabillon is already an expert in the modern theory of bandits, including best arm identification, and reinforcement learning.  Therefore this project's main training objective for Dr Gabillon will be to develop his skills and knowledge in advanced statistical methods(?) and game theory.  \TODO{What research knowledge will be learned and from who (including places you might visit)?}
+
+Lancaster University is world-leading in industrially-inspired statistics.  Learn from STOR-i and DSI.  Work with SMEs from Infolab.  Etc.
+
+In addition, Dr Gabillon will be given the opportunity to:
+\begin{enumerate}
+\item Receive training on preparing funding applications by co-authoring proposals for UK and EU funding agencies with Prof.\ Leslie and others.
+\item Gain further experience of developing industry/academic partnerships by working with Profs.\ Leslie and Eckley and other staff in STOR-i in technology transfer activities.
+\item Attend staff training workshops designed specifically for early-career researchers, including \TODO{XXX}.
+\item Develop public communication skills by presenting research results to varied audiences.
+\item Participate in the organisation of workshops in Lancaster and at the Royal Statistical Society.
+\item Opportunity (but not obligation) to participate in teaching and research supervision at undergraduate and graduate level.  The fellow will benefit from peer observation, mentoring, and constructive criticism.
+\item Gain experience of research planning and decision-making.
+\end{enumerate}
+
+Throughout the fellowship, Dr Gabillon will adhere to the ``European Charter for Researchers'', and the training objectives will be managed through a Personal Career Development Plan that Prof.\ Leslie and Dr Gabillon will write together.  This plan will be revised regularly throughout the fellowship to ensure that all objectives are met.  In addition, Dr Gabillon will have regular meetings with the host supervisor to discuss his research and to receive advice.
+
+Lancaster is the leading UK institution in bandit theory, with expertise in index policies (Glazebrook, Kirkbride, Jacko), Thompson sampling and contextual bandits (Grunewalder, Leslie) and application in medical trials (Vilar).  Gabillon brings expertise from another aspect of online learning and decision-making with expertise in the design and analysis of algorithmic approaches to learning, especially with combinatorial bandit problems.  This will complete the portfolio of bandit research at Lancaster.  Dr Gabillon's expertise in best-arm identification will be of great interest to the Medical and Pharmaceutical Statistics research group, who are exploring the use of such methods in clinical trial designs, and his expertise in combinatorial bandits complements current research of the Supervisor.
 
 \subsection{Quality of the supervision and the hosting arrangements}
 \label{sec:supervision}
 
+{\em
 Required sub-heading:
 \subsubsection*{Qualifications and experience of the supervisor(s)}
 
@@ -192,18 +285,33 @@ The text must show that the Experienced Researcher should be well integrated wit
 For GF both phases should be described - for the outgoing phase, specify the practical arrangements in place to host a researcher coming from another country, and for the incoming phase specify the measures planned for the successful (re-)integration of the researcher.
 
 Describe briefly how the host will contribute to the advancement of their career. In that context the following section of the European Charter for Researchers refers specifically to career development:
+}
+%\fbox{\begin{minipage}{\textwidth}\paragraph{Career development}
+%Employers and/or funders of researchers should draw up, preferably within the framework of their human resources management, a specific career development strategy for researchers at all stages of their career, regardless of their contractual situation, including for researchers on fixed-term contracts. It should include the availability of mentors involved in providing support and guidance for the personal and professional development of researchers, thus motivating them and contributing to reducing any insecurity in their professional future. All researchers should be made familiar with such provisions and arrangements.\end{minipage}}
+%
+%Therefore a Career Development Plan should not be included in the proposal, but it is part of implementing the project in line with the European Charter for Researchers.
 
-\fbox{\begin{minipage}{\textwidth}\paragraph{Career development}
-Employers and/or funders of researchers should draw up, preferably within the framework of their human resources management, a specific career development strategy for researchers at all stages of their career, regardless of their contractual situation, including for researchers on fixed-term contracts. It should include the availability of mentors involved in providing support and guidance for the personal and professional development of researchers, thus motivating them and contributing to reducing any insecurity in their professional future. All researchers should be made familiar with such provisions and arrangements.\end{minipage}}
+\subsubsection*{Qualifications and experience of the supervisor(s)}
 
-Therefore a Career Development Plan should not be included in the proposal, but it is part of implementing the project in line with the European Charter for Researchers.
+Prof.\ Leslie leads the Statistical Learning research group in the Department of Mathematics and Statistics, Lancaster University.  He is a world-leading researcher in statistical learning, Bayesian inference, decision-making and game theory, with 19 refereed articles in top journals of several different research fields, and collaborators from France, USA and Australia.  His research on contextual bandit algorithms \cite{MayEtAl2012} is used by many of the world's largest companies to balance exploration and exploitation in real-time website optimisation.  He is expert in the mathematics of learning in games, \cite{LeslieCollins03,LeslieCollins05,LeslieCollins06,ChapmanEtAl2013,PerkinsLeslie2014} stochastic approximation, \cite{LeslieCollins03,PerkinsLeslie2012,PerkinsLeslie2014} and the mathematics of statistically-inspired reinforcement learning. \cite{LeslieCollins05,LarsenEtAl2010}  Prof.\ Leslie is the holder of a Google Faculty Award which funds a student to investigate multiple-action selection in bandits.  Prior to his relocation to Lancaster, he was a senior lecturer in the statistics group of the School of Mathematics, University of Bristol.  He continues to be co-director of the \pounds1.5m EPSRC-funded cross-disciplinary decision-making research group at the University of Bristol, and was on the management team of the \pounds5.5m ALADDIN project, a large strategic partnership between BAE Systems and EPSRC, involving researchers from Imperial College, Southampton, Oxford, Bristol and BAE Systems.
+
+Prof.\ Leslie's mentoring approach is one of `guided freedom' in which the mentee takes responsibility for their own research, while regular discussions ensure that dead ends are avoided and promising openings are exploited.  In the 10 years since taking up a Faculty position, he has supervised 17 PhD students, 2 post-doctoral fellows, numerous MSc and undergraduate dissertations, and an undergraduate secondment from ENS Lyon.
+
+\subsubsection*{Hosting arrangements}
+
+Dr Gabillon will be embedded within the statistical learning group which is lead by Prof.\ Leslie.  This is a team of 5 academic staff and around 5 PhD students within the Department of Mathematics and Statistics.  The Researcher will participate in weekly group meetings and benefit from advice from the senior scientists in the group, including the Supervisor, on research direction and management, personal development, workshop organisation, teaching, and other aspects of academic life.  The group also has extremely strong links with both the Data Science Institute (XXX) and the STOR-i Centre for Doctoral Training (YYY).  These exciting initiative will provide multiple further opportunities to develop informal mentoring relationsjips in addition to the formal process which takes place for all staff at Lancaster University.
+
 
 \subsection{Capacity of the researcher to reach and re-enforce a position of professional maturity in research}
 \label{sec:maturity}
 
+{/em
 Applicants should demonstrate how their proposed research and personal experience can contribute to their professional development as an independent/mature researcher.
 
 Please keep in mind that the fellowships will be awarded to the most talented researchers as shown by the proposed research and their track record (Curriculum Vitae, section 4), in relation to their level of experience.
+}
+
+\TODO{Victor to have a first stab}
 
 \section{Impact}
 \label{sec:impact}
