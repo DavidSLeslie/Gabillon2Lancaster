@@ -14,24 +14,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Impact}{8}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Enhancing research- and innovation-related skills and working conditions to realise the potential of individuals and to provide new career perspectives}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.1}Enhancing research- and innovation-related skills and working conditions to realise the potential of individuals and to provide new career perspectives}{9}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Effectiveness of the proposed measures for communication and results dissemination}{9}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Public engagement}{9}{paragraph*.1}
+\contentsline {paragraph}{Public engagement}{10}{paragraph*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dissemination, exploitation of results}{9}{paragraph*.2}
+\contentsline {paragraph}{Dissemination, exploitation of results}{10}{paragraph*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Implementation}{9}{section.3}
+\contentsline {section}{\numberline {3}Implementation}{10}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Overall coherence and effectiveness of the work plan, including appropriateness of the allocation of tasks and resources}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Overall coherence and effectiveness of the work plan, including appropriateness of the allocation of tasks and resources}{10}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Appropriateness of the management structure and procedures, including quality management and risk management}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Appropriateness of the management structure and procedures, including quality management and risk management}{11}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Appropriateness of the institutional environment (infrastructure)}{11}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Competences, experience and complementarity of the participating organisations and institutional commitment}{11}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.4}Competences, experience and complementarity of the participating organisations and institutional commitment}{12}{subsection.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}CV of the Experienced Researcher}{12}{section.4}
+\contentsline {section}{\numberline {4}CV of the Experienced Researcher}{13}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Capacities of the Participating Organisations}{13}{section.5}
+\contentsline {section}{\numberline {5}Capacities of the Participating Organisations}{14}{section.5}
