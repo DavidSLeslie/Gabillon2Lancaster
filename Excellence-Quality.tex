@@ -2,31 +2,20 @@
 \subsection{Quality, innovative aspects and credibility of the research (including inter/multidisciplinary aspects)}
 \label{sec:quality}
 
-You should develop your proposal according to the following lines:
-\begin{itemize}
-\item Introduction, state-of-the-art, objectives and overview of the action
-\item Research methodology and approach: highlight the type of research and innovation activities proposed
-\item Originality and innovative aspects of the research programme: explain the contribution that the project is expected to make to advancements within the project field. Describe any novel concepts, approaches or methods that will be employed.
-\end{itemize}
-Explain how the high-quality, novel research is the most likely to open up the best career possibilities for the Experienced Researcher and new collaboration opportunities for the host organisation(s).
-
-
-\TODO{Add a paragraph on general security.}
 
 Security is an important aspect in modern world.
 Effectively protecting the ports, airports, and other transportation systems from malicious attacks,
-fighting the trafficking of drugs, and firearms, and securing proprietary and sensitive information over the ever-growing, modern cyber networks comprise some of the main axes of this critical task.
-A common challenge in all these problems is that 
+fighting the trafficking of drugs, and firearms, and securing proprietary and sensitive information over the ever-growing, modern cyber-networks comprise some of the main axes of this critical task. The challenge of this task is to make the most of the limited resources that are  available, a limited number of guards or security agent that can protect the designed targets from multiple possible attacks.
 
-As a solid mathematical framework to model strategic decision making, game theory has proved useful in many real-world applications from economics and political science to logic, computer science and psychology. 
-Security resource allocations and scheduling problems comprise yet another application area of critical concern, that has recently been shown to greatly benefit from game-theoretic approaches.
+In the field of strategic decision making, game theory has proved useful in many real-world applications from economics and political science to logic, computer science and psychology. This framework provides the recipes to compute solutions to games where the players make choices to maximize their own interests which are often in conflict with the ones of the other players. 
+Its application to security resource allocations and scheduling problems where two players, a defender and an attacker, compete  has recently been shown to be greatly beneficial.
 Since 2007, the so-called ARMOR software \cite{pita2008deployed} is used at the Los Angeles International Airport (LAX) to effectively determine 
 checkpoints on the roadways leading to the airport, and to canine patrol routes within terminals. 
-Similarly, such programs as IRIS \cite{tsai2009iris}, PROTECT \cite{shieh2012protect}, and TRUSTS \cite{yin2012trusts} are respectively being deployed at the US Federal Air Marshals, the US coast guard patrolling, and the Los Angeles Metro system's fare inspection strategy.
+Similarly, such programs as IRIS \cite{tsai2009iris}, PROTECT \cite{shieh2012protect}, and TRUSTS \cite{yin2012trusts} are respectively being deployed at the US Federal Air Marshals, the US coast guard patrolling, and the Los Angeles Metro system's fare inspection strategy. To solve these ``games'', all the possible actions (attacks and defences) of the two players are enumerated associated with the outcome (value) of each combination. All this data is gathered through data mining or expert educated guess in each given application and fed to the game theoretic solver. However in real-world scenarios where data is insufficient or missing or in case with changing environment this approach can prove not fully reliable.
 
-\TODO{Add much more about the importance and the impact of machine learning}
-These methods, while being remarkably effective in their corresponding application arenas, usually rely on a pre-defined model of the environment. However, such information may in general not be available in many real-world scenarios. A key objective forming the basis of this grant proposal, is thus to design efficient and theoretically sound, data-driven methods that can actively interact with the environment to {\em learn} a fair model through repeated games. As discussed in the sequel, this may be achieved in an online fashion or through an exploration phase prior to the algorithm's final launch.  
-introduce the need for sequential decision making under uncertainty and online learning
+Machine learning is a field of artificial intelligence where the goal is to design software able to \textbf{ 1)} actively (and smartly) collect data in order to \textbf{2)}  extract information from this data so that \textbf{3)} the machine itself can make use of this information to take autonomous decisions.  Based on solid statistical theoretical background, Machine learning has been applied in a very large variety of modern applications ranging from robotics to personalised product recommendation. 
+
+The key objective forming the basis of this grant proposal, is thus to design efficient and theoretically sound, data-driven methods that can actively interact with the environment to {\em learn} a fair model through repeated games. Using machine learning, the goal will be either \textbf{1)} to limit the costs imposed by this extra need to learn the model or  \textbf{2)} to actually design an efficient data mining procedure before the game starts that guarantee a good defence strategy.
 
 
 
@@ -87,8 +76,10 @@ Recently an extended analysis is given by \cite{Balcan15CR}  for the case of mul
 %\textbf{Motivation.} %%%V what can I bring
 
 
-\textbf{Main Goal.} The purpose of this proposal is to solve real world security game problems that needs to be made un
-to apply them to security games in a broad range of real world situations.
+\noindent \textit{\textbf{Main Goal}}\\ The purpose of this proposal is to design new methods for security games that are even more practical  in the sense that they would be autonomous in handling the uncertainty in the model and would actively be working at reducing it by interacting with the environment in which the game takes place. We desire to broaden the scope of repeated security game problems where the initial uncertainty about the players utilities can be overcome through using learning techniques  in conjunction with  repetitive plays of the game. These techniques are from the booming field of machine learning.
+
+
+
 Our goal is to have a theoretically sound approach by designing efficient algorithms for which we can provide finite sample analysis.
 Stochastic assumptions will be made when dealing with noise in the model and adversarial assumption when dealing with the adversary to make our approach both realistic and robust.
 %%%A depending on the considered scenraio, it may make sense to consider the problem as adversarial or stochastic. The distinction will be made clear in the ... 
@@ -154,6 +145,8 @@ Note that I worked on similar subject with learning in submodular functions.
 
 connections with risk averse (Cite the work of Amir Sani) maybe a separate section for this.
 talk about the classical cumulative regret setting also!
+
+this also ask the long term question of convergence when both player are learning at the same time their utilities.
 
 \textbf{Objective 2 Learning  more complex adversarially chosen attacker in  Stakleberg}
 The idea would be to  extend the work of Balcan using more complex bandit algorithms. They use a version with k known attackers. We can assume that k is extremely large but there is some  structure that permits us to use for instance combinatorial bandits.
