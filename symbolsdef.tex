@@ -1,0 +1,505 @@
+\newdimen\pHeight
+\pHeight=-32678sp
+\newdimen\pLower
+\pLower=-4096sp
+\newdimen\pLineWidth
+\pLineWidth=32678sp
+\newdimen\pKern
+\pKern=-276480sp
+\newdimen\pIR
+\pIR=-131072sp
+\newsavebox{\Cbox}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\newsavebox{\vertCmplx}
+\newdimen\Cheight
+\newdimen\Cwidth
+\sbox{\Cbox}{\rm C}
+\Cheight=\ht\Cbox
+\Cwidth=\wd\Cbox
+\advance\Cheight by \pHeight
+\sbox{\vertCmplx}{\rule[\pLower]{\pLineWidth}{\Cheight}}
+\sbox{\Cbox}{\usebox{\Cbox}\kern\pKern\usebox{\vertCmplx}}
+\wd\Cbox=\Cwidth
+%\def\C{\usebox{\Cbox}}
+%\def\Re{{\rm I\kern\pIR R}}
+\def\Re{\mathbb{R}}
+\def\Nat{{\rm I\kern\pIR N}}
+%\def\argmax{\mathop{\rm arg\,max}}
+%\def\argmin{\mathop{\rm arg\,min}}
+\def\liminf{\mathop{\rm lim\,inf}}
+\def\log{\mathop{\rm log}}
+\def\Mean{{\bf Mean}}
+\def\Var{{\bf Var}}
+\def\Cov{{\bf Cov}}
+\def\exptE{{\E}}
+%\def\diag{\mathop{\rm diag}}
+
+\newcommand{\bsmall}[1]{\vspace{#1}\begin{small}}
+\newcommand{\esmall}[1]{\end{small}\vspace{#1}}
+
+
+
+\newcommand{\argmax}{\operatorname*{argmax}} %\operatorname* pour les op. pouvant admettre des limites...
+\newcommand{\argmin}{\operatorname*{argmin}}
+
+\newcommand{\diag}{\operatorname*{diag}}
+
+\newcommand{\greedy}{\operatorname*{{\cal G}}}
+\newcommand{\lip}{\operatorname*{Lip}}
+\renewcommand{\mod}{\operatorname*{mod}}
+
+\newcommand{\bruno}[1]{~\\
+{\bf[Comment (Bruno)]: \emph{#1}}
+~\\
+}
+
+\newcommand\pp[1]{\Gamma^{#1}}
+
+\def\defi{\stackrel{\Delta}{=}}
+\def\E{\mathbb{E}}
+\def\R{\mathbb{R}}
+\def\G{{\cal G}}
+\def\F{{\cal F}}
+\def\bv{{\bf v}}
+\def\bq{{\bf q}}
+\def\bpi{\boldsymbol{\pi}}
+
+
+\def\proj{{\cal A}}
+
+\def\ie{{that is} }
+\def\eg{{for instance} }
+\def\cf{{see} }
+
+
+\newcommand\mpi[1]{$\mbox{AMPI}_{#1}$}
+\newcommand\cbmpi[1]{$\mbox{CBMPI}_{#1}$}
+
+
+
+\def\A{{\mathcal{A}}}
+\def\B{{\mathcal{B}}}
+\def\C{{\mathcal{C}}}
+\def\D{{\mathcal{D}}}
+\def\E{{\mathbb{E}}}
+\def\F{{\mathcal{F}}}
+\def\G{{\mathcal{G}}}
+%\def\H{{\mathcal{H}}}
+
+\def\K{{\mathcal{K}}}
+\def\I{{\mathcal{I}}}
+\def\J{{\mathcal{J}}}
+\def\L{{\mathcal{L}}}
+\def\M{{\mathcal{M}}}
+\def\N{{\mathcal{N}}}
+\def\O{{\mathcal{O}}}
+\def\P{{\mathcal{P}}}
+\def\Q{{\mathcal{Q}}}
+%\def\R{{\mathcal{R}}}
+\def\S{{\mathcal{S}}}
+\def\T{{\mathcal{T}}}
+\def\U{{\mathcal{U}}}
+\def\V{{\mathcal{V}}}
+\def\W{{\mathcal{W}}}
+\def\X{{\mathcal{X}}}
+\def\Z{{\mathcal{Z}}}
+
+\def\vecalpha{{\boldsymbol{\alpha}}}
+\def\vecmu{{\boldsymbol{\mu}}}
+\def\vectheta{{\boldsymbol{\theta}}}
+\def\vecpi{{\boldsymbol{\pi}}}
+\def\vecpsi{{\boldsymbol{\psi}}}
+\def\vecphi{{\boldsymbol{\phi}}}
+\def\vec0{{\boldsymbol{0}}}
+\def\vecf{{\boldsymbol{f}}}
+\def\veck{{\boldsymbol{k}}}
+\def\vecp{{\boldsymbol{p}}}
+\def\vecq{{\boldsymbol{q}}}
+\def\vecu{{\boldsymbol{u}}}
+\def\vecv{{\boldsymbol{v}}}
+\def\vecw{{\boldsymbol{w}}}
+\def\vecx{{\boldsymbol{x}}}
+\def\vecy{{\boldsymbol{y}}}
+\def\vecz{{\boldsymbol{z}}}
+
+\def\matSigma{{\boldsymbol{\Sigma}}}
+\def\matA{{\boldsymbol{A}}}
+\def\matC{{\boldsymbol{C}}}
+\def\matF{{\boldsymbol{F}}}
+\def\matG{{\boldsymbol{G}}}
+\def\matH{{\boldsymbol{H}}}
+\def\matI{{\boldsymbol{I}}}
+\def\matK{{\boldsymbol{K}}}
+\def\matP{{\boldsymbol{P}}}
+\def\matU{{\boldsymbol{U}}}
+\def\matY{{\boldsymbol{Y}}}
+\def\matZ{{\boldsymbol{Z}}}
+
+\def\setP{{\mathbb{P}}}
+
+\newcommand{\iid}{\stackrel{iid}{\sim}}
+
+% Symbols
+\newcommand{\alg}{\mathcal A}
+\renewcommand{\Re}{\mathbb R}
+%\def\argmax{\mathop{\rm arg\,max}}
+%\def\argmin{\mathop{\rm arg\,min}}
+\def\arginf{\mathop{\rm arg\,inf}}
+% MDP notation
+\newcommand{\MDP}{\mathcal M}
+\newcommand{\discount}{\gamma}
+\newcommand{\state}{\S}
+\newcommand{\action}{\mathcal{A}}
+\newcommand{\reward}{r}
+\newcommand{\Return}{R}
+%\newcommand{\truncReturn}{\overline{R}}
+\newcommand{\truncReturn}{R}
+\newcommand{\VFReturn}{\widetilde{R}}
+\newcommand{\dynamics}{p}
+%\newcommand{\reward}{\mathcal{R}}
+%\newcommand{\dynamics}{\mathcal{P}}
+
+\newcommand{\rolSetDistri}{\mu}
+
+\newcommand{\RolloutSize}{m}
+
+\newcommand{\pol}{\pi}
+\newcommand{\polSpace}{\Pi}
+\newcommand{\polDist}{\delta}
+\newcommand{\fun}{f}
+\newcommand{\Data}{\mathcal{D}}
+\newcommand{\funSpace}{\mathcal{F}}
+\newcommand{\vSpace}{\mathcal{B}^v}
+\newcommand{\qSpace}{\mathcal{B}^Q}
+\newcommand{\vPiSpace}{\mathcal{B}^{\pol}}
+%\newcommand{\pseudoDim}{\mathcal{V}^+}
+\newcommand{\pseudoDim}[1]{V_{#1^+}}
+\newcommand{\cover}{\mathcal{N}}
+
+\newcommand{\Rmax}{R_{\max}}
+
+\newcommand{\Vfun}{v}
+%\newcommand{\Vmax}{V_{\max}}
+\newcommand{\Vmax}{V_{\max}}
+\newcommand{\hV}{\widehat{\Vfun}}
+\newcommand{\hv}{\widehat{\Vfun}}
+\newcommand{\bV}{\overline{\Vfun}}
+
+\newcommand{\Qfun}{Q}
+\newcommand{\estQfun}{\widehat{\Qfun}}
+\newcommand{\Qmax}{Q_{\max}}
+%\newcommand{\Qmax}{q}
+\newcommand{\hQ}{\widehat{Q}}
+
+\newcommand{\hmu}{\widehat{\rho}}
+\newcommand{\hrho}{\widehat{\mu}}
+\newcommand{\hell}{\widehat{\ell}}
+
+\newcommand{\hhmu}{\widehat{\mu}}
+
+\newcommand{\greedyPol}{\mathcal G}
+\newcommand{\data}{\mathcal D}
+%\newcommand{\ibar}{\bar{i}}
+\newcommand{\ibar}{j}
+
+\newcommand{\ind}[1]{\mathbb I\left\lbrace {#1} \right\rbrace}
+
+\newcommand{\norm}[1]{\Arrowvert{#1}\Arrowvert}
+\newcommand{\normMu}[1]{||{#1}||_{1,\mu}}
+\newcommand{\normNu}[1]{||{#1}||_{1,\nu}}
+\newcommand{\err}{\varepsilon}
+%\newcommand{\expErr}{\ell}
+%\newcommand{\empErr}{\widehat{\ell}}
+\newcommand{\expErr}{\epsilon'}
+\newcommand{\empErr}{\widehat{\epsilon}'}
+
+\newcommand{\lateDist}{{\rho}}
+\newcommand{\initDist}{{\mu}}
+\newcommand{\nSamplesDPI}{{N'}}
+\newcommand{\sumSamplesDPI}{\sum_{i=1}^{\nSamplesDPI}}
+\newcommand{\nSamples}{{N'}}
+\newcommand{\sumSamples}{\sum_{i=1}^{\nSamples}}
+\newcommand{\nRolls}{M}
+\newcommand{\sumRolls}{\sum_{j=1}^{\nRolls}}
+\newcommand{\avgActions}{\frac{1}{|\action|}\sum_{a\in\action}}
+\newcommand{\sumActions}{\sum_{a\in\action}}
+
+\newcommand{\probParam}{\delta}
+% Indecies, number of elements, summations, products, and ranges
+\newcommand{\idxTask}{m}
+\newcommand{\idxTaskB}{m'}
+\newcommand{\idxTaskNew}{\nTasks+1}
+\newcommand{\idxSample}{n}
+\newcommand{\idxST}{mn}
+\newcommand{\idxClass}{c}
+\newcommand{\nTasks}{M}
+\newcommand{\nTasksClass}{\nTasks_{\class}}
+\newcommand{\nTasksClassBut}{\nTasks_{-\idxTask,\class}}
+\newcommand{\nReplica}{{N_{r}}}
+\newcommand{\nClasses}{C}
+\newcommand{\sumTask}{\sum_{\idxTask=1}^{\nTasks}}
+\newcommand{\sumSample}{\sum_{\idxSample=1}^{\nSamples}}
+\newcommand{\sumClass}{\sum_{\idxClass=1}^{\nClasses}}
+\newcommand{\prodTask}{\prod_{\idxTask=1}^{\nTasks}}
+\newcommand{\prodSample}{\prod_{\idxSample=1}^{\nSamples}}
+\newcommand{\prodClass}{\prod_{\idxClass=1}^{\nClasses}}
+\newcommand{\rangeTask}{\idxTask=1,\ldots,\nTasks}
+\newcommand{\rangeSample}{\idxSample=1,\ldots,\nSamples}
+\newcommand{\rangeClass}{\idxClass=1,\ldots,\nClasses}
+\newcommand{\rangeClassInf}{\idxClass=1,\ldots,\infty}
+
+\newcommand{\iter}{t}
+\newcommand{\class}{c}
+\newcommand{\classVectIter}{\textbf{c}^{(\iter)}}
+\newcommand{\classVect}{\textbf{c}}
+\newcommand{\classTask}{\class_{\idxTask}}
+\newcommand{\classTaskB}{\class_{\idxTask'}}
+\newcommand{\classTaskNew}{\class_{\idxTaskNew}}
+\newcommand{\meanClass}{\mean_{\class}}
+\newcommand{\precClass}{\precis_{\class}}
+\newcommand{\covClass}{\cov_{\class}}
+\newcommand{\varClass}{\var_{\class}}
+\newcommand{\meanClassTask}{\mean_{\classTask}}
+\newcommand{\precClassTask}{\precis_{\classTask}}
+\newcommand{\covClassTask}{\cov_{\classTask}}
+\newcommand{\varClassTask}{\var_{\classTask}}
+
+\newcommand{\vfun}{V}
+\newcommand{\vfunTask}{\vfun_{\idxTask}}
+\newcommand{\vfunTMean}{\mean_{\vfunT}}
+\newcommand{\vfunTCov}{\cov_{\vfunT}}
+\newcommand{\vfunTMeanPost}{\meanPost_{\vfunT}}
+\newcommand{\vfunTCovPost}{\covPost_{\vfunT}}
+
+\newcommand{\xtest}{x_*}
+
+\newcommand{\w}{{\bold w}}
+\newcommand{\wAvg}{\bar{\w}}
+\newcommand{\wFake}{\widehat{\w}}
+\newcommand{\wTask}{\w_{\idxTask}}
+\newcommand{\wTaskB}{\w_{\idxTask'}}
+\newcommand{\wTaskNew}{\w_{\idxTaskNew}}
+\newcommand{\wFakeTask}{\wFake_{\idxTask}}
+\newcommand{\wFakeTaskNew}{\wFake_{\idxTaskNew}}
+\newcommand{\wFakeTaskB}{\wFake_{\idxTask'}}
+\newcommand{\wTaskMean}{\mean_{\idxTask}}
+\newcommand{\wTaskCov}{\cov_{\idxTask}}
+\newcommand{\wTaskPrec}{\precis_{\idxTask}}
+\newcommand{\wTaskMeanPost}{\meanPost_{\idxTask}}
+\newcommand{\wTaskPrecPost}{\precPost_{\idxTask}}
+\newcommand{\wTaskCovPost}{\covPost_{\idxTask}}
+
+
+\newcommand{\latent}{\mathcal Z}
+
+\newcommand{\coeff}{\alpha}
+\newcommand{\coeffT}{\coeff_{\task}}
+\newcommand{\coeffTMean}{\mean_{\coeff}}
+\newcommand{\coeffTCov}{\cov_{\coeff}}
+\newcommand{\coeffTMeanPost}{\meanPost_{\coeffT}}
+\newcommand{\coeffTCovPost}{\covPost_{\coeffT}}
+
+\newcommand{\nfeatures}{s}
+\newcommand{\dims}{d}
+
+\newcommand{\featFun}{\phi}
+\newcommand{\featVec}{\boldsymbol{\phi}}
+\newcommand{\featMat}{\boldsymbol{\Phi}}
+\newcommand{\featMatTask}{\featMat_{\idxTask}}
+\newcommand{\featMatST}{\featMat_{\idxST}}
+
+\newcommand{\kernelFun}{k}
+\newcommand{\kernelFunT}{k_{\task}}
+\newcommand{\kernelMat}{K}
+\newcommand{\kernelMatT}{\kernelMat_{\task}}
+
+\newcommand{\inSpace}{\mathcal X}
+\newcommand{\inElemTask}{X_{\idxTask}}
+\newcommand{\inElem}{x}
+\newcommand{\inElemST}{\inElem_{\idxST}}
+\newcommand{\inElemSTB}{\inElem'_{\idxST}}
+
+\newcommand{\obs}{r}
+\newcommand{\obsTask}{R_{\idxTask}}
+\newcommand{\obsTaskB}{R_{\idxTask'}}
+\newcommand{\obsTaskNew}{R_{\idxTaskNew}}
+
+\newcommand{\outT}{R_{\idxTask}}
+\newcommand{\outElemT}{r^i_\idxTask}
+\newcommand{\outElem}[2]{r_{#2}^{#1}}
+
+\newcommand{\noise}{N}
+\newcommand{\noiseT}{\noise_{\task}}
+\newcommand{\noiseTVar}{\Sigma_{\task}}
+\newcommand{\noiseTVarB}{\var\transfT\transpose{\transfT}}
+\newcommand{\stddev}{\sigma}
+
+% Partial equations
+\newcommand{\featHTTask}{\featMatTask\transpose{\matH}}
+\newcommand{\HfeatTTask}{\matH\transpose{\featMat}_{\idxTask}}
+\newcommand{\HfeatTTaskSample}{\matH\transpose{\featMat}_{\idxST}}
+\newcommand{\invHHT}{\invA{{\matH\transpose{\matH}}}}
+\newcommand{\HHT}{\matH\transpose{\matH}}
+
+% Distributions and parameters
+\newcommand{\normal}{\mathcal N}
+\newcommand{\mean}{\boldsymbol{\mu}}
+\newcommand{\meanPrior}{\mean_0}
+\newcommand{\meanPost}{{\meanPrior'}}
+\newcommand{\meanPriorRep}{\widetilde{\mean}_0}
+\newcommand{\meanPostRep}{{\meanPriorRep'}}
+\newcommand{\meanClassPrior}{\mean_{0\idxClass}}
+\newcommand{\meanClassPriorRep}{\widetilde{\mean}_{0\idxClass}}
+\newcommand{\meanClassPostRep}{{\meanClassPriorRep'}}
+
+\newcommand{\var}{\sigma^2}
+\newcommand{\varPrior}{\var_0}
+\newcommand{\varPost}{\varPrior'}
+\newcommand{\varPriorRep}{\widetilde{\var}_0}
+\newcommand{\varPostRep}{\varPriorRep'}
+\newcommand{\varClassPrior}{\var_{0\idxClass}}
+\newcommand{\varClassPriorRep}{\widetilde{\var}_{0\idxClass}}
+\newcommand{\varClassPostRep}{\varClassPriorRep'}
+
+\newcommand{\cov}{\mathbf{\Sigma}}
+\newcommand{\covB}{\mathbf{\Sigma}'}
+\newcommand{\covPrior}{\cov_0}
+\newcommand{\covPost}{\covPrior'}
+\newcommand{\covPriorRep}{\widetilde{\cov}_0}
+\newcommand{\covPostRep}{\covPriorRep'}
+\newcommand{\covClassPrior}{\cov_{0\idxClass}}
+\newcommand{\covClassPriorRep}{\widetilde{\cov}_{0\idxClass}}
+\newcommand{\covClassPostRep}{\covClassPriorRep'}
+
+\newcommand{\precis}{\Lambda}
+\newcommand{\precPrior}{\precis_0}
+\newcommand{\precPost}{\precisPrior'}
+\newcommand{\precPriorRep}{\widetilde{\precis}_0}
+\newcommand{\precPostRep}{\precisPriorRep'}
+\newcommand{\precClassPrior}{\precis_{0\idxClass}}
+\newcommand{\precClassPriorRep}{\widetilde{\precis}_{0\idxClass}}
+\newcommand{\precClassPostRep}{\precisClassPriorRep'}
+
+\newcommand{\iwishart}{\mathcal {IW}}
+\newcommand{\wishart}{\mathcal W}
+
+\newcommand{\wishScale}{k}
+\newcommand{\wishScalePrior}{\wishScale_0}
+\newcommand{\wishScalePost}{\wishScalePrior'}
+\newcommand{\wishScalePriorRep}{\widetilde{\wishScale}_0}
+\newcommand{\wishScalePostRep}{\wishScalePriorRep'}
+\newcommand{\wishScaleClassPrior}{\wishScale_{0\idxClass}}
+\newcommand{\wishScaleClassPriorRep}{\widetilde{\wishScale}_{0\idxClass}}
+\newcommand{\wishScaleClassPostRep}{\wishScaleClassPriorRep'}
+
+\newcommand{\freedom}{\nu}
+\newcommand{\freedomPrior}{\freedom_0}
+\newcommand{\freedomPost}{\freedomPrior'}
+\newcommand{\freedomPriorRep}{\widetilde{\freedom}_0}
+\newcommand{\freedomPostRep}{\freedomPriorRep'}
+\newcommand{\freedomClassPrior}{\freedom_{0\idxClass}}
+\newcommand{\freedomClassPriorRep}{\widetilde{\freedom}_{0\idxClass}}
+\newcommand{\freedomClassPostRep}{\freedomClassPriorRep'}
+
+\newcommand{\covNoise}{\mathbf{S}}
+
+\newcommand{\igamma}{\mathcal {IG}}
+\newcommand{\igScale}{\beta}
+\newcommand{\igScalePrior}{\igScale_0}
+\newcommand{\igScalePost}{\igScalePrior'}
+\newcommand{\igScalePriorRep}{\widetilde{\igScale}_0}
+\newcommand{\igScalePostRep}{\igScalePriorRep'}
+\newcommand{\igScaleClassPrior}{\igScale_{0\idxClass}}
+\newcommand{\igScaleClassPriorRep}{\widetilde{\igScale}_{0\idxClass}}
+\newcommand{\igScaleClassPostRep}{\igScaleClassPriorRep'}
+
+\newcommand{\igShape}{\alpha}
+\newcommand{\igShapePrior}{\igShape_0}
+\newcommand{\igShapePost}{\igShapePrior'}
+\newcommand{\igShapePriorRep}{\widetilde{\igShape}_0}
+\newcommand{\igShapePostRep}{\igShapePriorRep'}
+\newcommand{\igShapeClassPrior}{\igShape_{0\idxClass}}
+\newcommand{\igShapeClassPriorRep}{\widetilde{\igShape}_{0\idxClass}}
+\newcommand{\igShapeClassPostRep}{\igShapeClassPriorRep'}
+
+\newcommand{\mnomial}{\mathcal M}
+\newcommand{\dirac}{\delta}
+
+% Dirichlet process parameters and symbols
+\newcommand{\baseDistro}{G_0}
+\newcommand{\baseDistroPost}{\widetilde{G}}
+\newcommand{\concentration}{\tau}
+\newcommand{\stick}{v}
+\newcommand{\stickClass}{\stick_\idxClass}
+\newcommand{\mnCoeff}{\pi}
+\newcommand{\mnCoeffClass}{\mnCoeff_\idxClass}
+
+\newcommand{\param}{\theta}
+\newcommand{\paramClass}{\param_\idxClass}
+\newcommand{\paramClassTask}{\param_{\classTask}}
+\newcommand{\hyper}{\psi}
+\newcommand{\hyperPrior}{\hyper_0}
+\newcommand{\hyperPriorRep}{\widetilde{\hyper}_0}
+\newcommand{\hyperPost}{\hyperPrior'}
+\newcommand{\hyperPostRep}{\hyperPriorRep}
+\newcommand{\hyperClass}{\hyper_{0\idxClass}}
+\newcommand{\hyperClassPost}{\hyperClass'}
+\newcommand{\hyperClassRep}{\widetilde{\hyper}_{0\idxClass}}
+\newcommand{\hyperClassPostRep}{\hyperClassRep'}
+
+% Special matrices and operators
+
+\newcommand{\matHT}{\transpose{\matH}}
+\newcommand{\vectH}{h}
+\newcommand{\identity}{I}
+\newcommand{\identityA}[1]{I_{#1}}
+\newcommand{\transpose}[1]{{#1}^\top}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\invA}[1]{\left(#1\right)^{-1}}
+\newcommand{\trace}[1]{\text{tr}\left(#1\right)}
+\newcommand{\noisevec}{\mathcal E}
+
+% Modified LQR parameters
+\newcommand{\svar}{\eta^2}
+\newcommand{\avar}{\delta^2}
+\newcommand{\amean}{\lambda}
+
+% Expectation, covariance and probability
+\newcommand{\expectShort}{\mathbb E}
+\newcommand{\expectA}[1]{\mathbb E \left[ {#1} \right]}
+\newcommand{\expectB}[2]{\mathbb E_{#1} \left[ {#2} \right]}
+\newcommand{\covA}[1]{\text{Cov} \left[ {#1} \right]}
+\newcommand{\probA}[1]{\mathbb P\left[ {#1} \right]}
+\newcommand{\probB}{p}
+
+% Extras
+\newcommand{\new}{\textrm{\scriptsize new}}
+\newcommand{\paragTitle}[1]{\textbf{#1.}}
+%\newcommand{\note}[1]{\textbf{Note.} \textit{#1}}
+%\newcommand{\TODO}[1]{(\textbf{TODO: {#1}})}
+\newcommand{\shrink}{\!\!\!}
+%\newcommand{\eqref}[1]{(\ref{#1})}
+
+%\newcommand{\errExpSTL}[1][]{er_{\task_{#1}}}
+%\newcommand{\errExpSTLOpt}[1][]{er^*_{\task_{#1}}}
+%\newcommand{\dotprod}[2]{\langle #1, #2 \rangle}
+
+\newcommand{\LinSpace}{\F}
+\newcommand{\TruncSpace}{\widetilde{\LinSpace}}
+\newcommand{\distri}{\mu}
+\newcommand{\empDistri}{\widehat{\distri}}
+
+\newcommand{\q}{Q}
+
+\newcommand{\appdx}[1]{Appendix~{#1}}
+\newcommand{\eqrefb}[1]{Equation~\eqref{eq:#1}}
+
+
+\def\AMPIV{\mbox{AMPI-V }}
+\def\AMPIQ{\mbox{AMPI-Q }}
+
+
+\def\szl{Szita and L{\H{o}}rincz }
+\def\Ev{{\mathcal{E}}}
+
