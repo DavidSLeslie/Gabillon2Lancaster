@@ -1,0 +1,49 @@
+\newenvironment{myindentpar}[1]%
+{\begin{list}{}%
+         {\setlength{\leftmargin}{#1}}%
+         \item[]%
+}
+{\end{list}}
+
+\newenvironment{vitem}[2]
+{\vspace{0.1cm} \color{resNoir2}{\rule[0.3ex]{1ex}{1ex}}\color{resCas}{\textsf{\textbf{  {   #1:}}}} \color{black} {\textbf{ #2}}\normalsize \begin{myindentpar}{0.8cm}\vspace{-0.2cm} }
+{\end{myindentpar}}
+
+
+\newenvironment{vitem2}[2]
+{\vspace{0.1cm} \color{resNoir2}{\rule[0.3ex]{1ex}{1ex}}\color{resCas}{\textsf{\textbf{   {   #1:}}}} \color{black} {\textbf{ #2}}\normalsize \begin{myindentpar}{0.8cm}\vspace{-0.2cm} }
+{\end{myindentpar}}
+
+\newenvironment{vsection}[1]
+{ \vspace{0.5cm}
+\color{resNoir1}{\textsf{\textbf{\Large{#1}}}}\vspace{0.3cm}
+\color{resRouge}{\hrule} \vspace{0.2cm}
+ \normalsize \color{black}\begin{myindentpar}{0.3cm} }
+{\end{myindentpar} }
+
+
+
+\newenvironment{vitem3}[1]
+{ \color{resNoir2}{\rule[0.3ex]{1ex}{1ex}}\color{resCas}{\textsf{\textbf{  {    #1:}}}} \color{black} \normalsize}
+{}
+
+\newenvironment{vitem4}
+{\vspace{0.1cm} \color{resNoir2}{\rule[0.3ex]{1ex}{1ex}} \color{black} \normalsize}
+{}
+
+\newenvironment{vitem5}[1]
+{ \color{resNoir2}{\rule[0.3ex]{1ex}{1ex}}\color{resCas}{\textsf{\textbf{  {    #1:}}}} \color{black} \normalsize\noindent}
+{}
+
+\newenvironment{vitem6}[1]
+{\color{resNoir2}{\rule[0.3ex]{1ex}{1ex}}\color{resCas}\large{\textbf{    #1}}\normalsize \begin{myindentpar}{0.8cm}\vspace{-0.15cm} }
+{\end{myindentpar}}
+
+
+\newenvironment{vitem8}[1]
+{\vspace{0.1cm} \color{resNoir2}{\rule[0.3ex]{1ex}{1ex}}\color{resCas}{\textsf{\textbf{  {   #1:}}}}\normalsize \begin{myindentpar}{0.8cm}\vspace{-0.25cm} }
+{\end{myindentpar}}
+
+\newenvironment{vitem7}[1]
+{\color{resNoir1}{\rule[0.3ex]{0.7ex}{0.7ex}}\color{black}\large{\textbf{    #1}}\normalsize \begin{myindentpar}{0.8cm}\vspace{-0.15cm} }
+{\end{myindentpar}}
