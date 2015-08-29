@@ -3,18 +3,20 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
-\usepackage[T1]{fontenc} % Pour que LaTeX comprenne les caractres accentus ;
-                         % norme iso-8859, cela risque de ne pas marcher avec
-                         % des fichiers crs sous windows
+
+\usepackage[utf8]{inputenc}
+\usepackage[french,english]{babel}
+
 \usepackage{eurosym}
 \usepackage{lastpage}
 \usepackage{xspace}
 \usepackage[margin=16mm,includehead,includefoot]{geometry}
 \usepackage{fancyhdr}
-\usepackage{booktabs}
+\usepackage{booktabs,lipsum}
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{csquotes}
 \usepackage{pgfgantt}
@@ -173,11 +175,7 @@ Note that:
 \section{Excellence}
 \label{sec:excellence}
 
-\TODO{Convince the reader that this is state of the art, important, timely and relevant.  It needs to demonstrate quality and innovation.  There needs to be some detail on the methodological approach.  We need to give some specifics on complementary skills development (in particular leadership), and give clarity and specifics on how VG will reach independence.}
 
-{\em
-Please note that the principles of the European Charter for Researchers and Code of Conduct for the Recruitment of Researchers promoting open recruitment and attractive working conditions are expected to be endorsed and applied by all beneficiaries in the Marie Sklodowska-Curie actions.
-}
 \input{Excellence-Quality.tex}
 
 
