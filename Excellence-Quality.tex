@@ -24,9 +24,10 @@ Machine learning lies at the crossroad between statistics and computer science. 
 \noindent \textbf{\textit{\\State-of-the-art}}
 \noindent \textbf{\textit{\\i. Security meets Game Theory }}\\
 %\TODO{better distinction between minimax nash stacjkelberg}
-From a game-theoretic perspective, a security problem is viewed as a two-player game that captures the interaction between a defender (e.g., border patrols, metro inspectors, network administrators) and an attacker (e.g., terrorists/drug smugglers, illegal metro users, malicious cyber attackers). The action of the defender (attacker) is defined as selecting a subset of targets to protect (attack). For each defender/attacker action pair, \textit{utilities} are defined as the players' gain or loss, and the players' objectives are to maximise their corresponding pay-offs. From the defender's perspective, this corresponds to efficiently allocating a limited number of resources to secure some predefined targets. 
+From a game-theoretic perspective, a security problem is viewed as a two-player game that captures the interaction between a defender (e.g., border patrols, metro inspectors, network administrators) and an attacker (e.g., terrorists/drug smugglers, illegal metro users, malicious cyber attackers). The action of the defender (attacker) is defined as selecting a subset of targets to protect (attack). For each defender/attacker action pair, \textit{utilities} are defined as the players' gain or loss, and the players' objectives are to maximise their corresponding pay-offs. From the defender's perspective, this corresponds to efficiently allocating a limited number of resources to secure some predefined targets. These utilities for both players can be stored in two  matrices,  $\boldsymbol A$ for the defender,  $\boldsymbol B$ for the attacker, where $\boldsymbol A_{i,j}$ is the utility for the defender, when she plays her strategy $i$ and the attacker responds with her $j^{\text{th}}$ strategy; the utility $\boldsymbol B_{i,j}$ for the attacker is defined analogously. 
 %The defender allocates a limited number of resources to secure some predefined target, which may under threat by the attacker. 
-Solutions to such games rely on randomised strategies, making the defender's scheme highly unpredictable for the attacker, thus giving rise to a significant advantage over the original mechanisms that are based on deterministic human schedulers. Another important feature of this paradigm is that it allows to obtain theoretical guarantees. Specifically, in the case of games that are fully competitive between the two players  (i.e. the so-called zero-sum games), the solution is provably robust in that it provides guaranteed performance against {\em any} possible attacker. Moreover, such guarantees hold, even if the defender's strategy is completely revealed to the attacker.  
+Solutions to such games rely on randomised strategies, making the defender's scheme highly unpredictable for the attacker, thus giving rise to a significant advantage over the original mechanisms that are based on deterministic human schedulers. 
+Another important feature of this paradigm is that it allows to obtain theoretical guarantees. Specifically, in the case of games that are fully competitive between the two players  (i.e. the so-called zero-sum games), the solution is provably robust in that it provides guaranteed performance against {\em any} possible attacker. Moreover, such guarantees hold, even if the defender's strategy is completely revealed to the attacker.  
 The extension of this guarantee to a more general (non zero-sum) game is provided by Stackelberg equilibrium, a notion that generalises the famous Nash equilibrium \cite{korzhyk2011stackelberg}. Indeed, this is well-suited to the scenario where the defender's strategies may be at risk of revelation or leak. 
 %Beyond these fundamental results, 
 %some questions forming the primary focus of research in security games have been scalability, robustness with respect to uncertainty on the players utilities, or devising strategies that take advantage of the attacker's potentially limited rationality or bounded memory\cite{tambe2012game}. 
@@ -35,7 +36,7 @@ The extension of this guarantee to a more general (non zero-sum) game is provide
 
 \noindent \textbf{\textit{\\ii. Uncertainty in Security Games}}\\
 Uncertainty is an important factor to consider in most real-world applications. 
-In some scenarios, the players may be uncertain about their utilities, or those of the other players'. For instance, in the context of security games, the random selection of passengers for security checks at an airport is a source of uncertainty in this game, where the outcome is random and the probability of successful security enforcement  is unknown. 
+In some scenarios, the players may be uncertain about their utilities (the $A_{i,j}$'s), or those of the other players'. For instance, in the context of security games, the random selection of passengers for security checks at an airport is a source of uncertainty in this game, where the outcome is random and the probability of successful security enforcement  is unknown. 
 As also confirmed by several empirical studies in fraud and cybercrime detection, this phenomenon can significantly decrease the defender's performance\cite{granick2005faking, swire2009no}.
 Extensive studies have been dedicated to the design of security games that are robust with respect to uncertainty about the environment\cite{aghassi2006robust,Nguyen14RO, Kiekintveld:2013}. 
 However, an important observation is that much more can be done in the case of {\em repeated} security games.  
@@ -86,101 +87,107 @@ Some interesting advancements in security games have recently been  made through
 These methods mostly focus on the case where the attacker's preferences are not fully known and are thus to be learned; the learning objective is achieved through a repeated a game. Some recent work analyse the number of required queries to learn the optimal defender's strategy \cite{blum2014learning, letchford2009learning}. 
 Marecki et. al. and Qian et. al.\cite{Marecki12PR, qian2014online} take an empirical Bayesian approach where, given a prior distribution, planning techniques based on Partially Observable Markov Decision Processes (POMDPs) are used to update the posterior over the adversary's preferences.
 The main theoretical drawback of this planning method is in that the algorithm is based on Upper Confidence Trees (UCT), which, as shown by  \cite{munos2014bandits}, are provably sub-optimal. 
-Recently, an extended analysis has been given by \cite{Balcan15CR} for the case of multiple attackers, where at each round of the game, a single attacker is chosen adversarially from a fixed, finite, set of known attackers. The latter work shows strong connections with adversarial bandit theory. 
+Recently, an extended analysis has been given\cite{Balcan15CR} for the case of multiple attackers, where at each round of the game, a single attacker is chosen adversarially from a fixed, finite, set of known attackers. This corresponds to a case where the utility matrix $\boldsymbol B$ is chosen adversarially from a set of $k$ known matrices.  The latter work shows strong connections with adversarial bandit theory. 
 
 %\textbf{Motivation.} %%%V what can I bring
 
 
 \noindent \textit{\textbf{\\Main Goal}}\\
- 
-Some of the main issues forming the primary focus of research in security games have been scalability, the ability for the designed methods to handle problems with very large number of actions for the players, or devising strategies that take advantage of the attacker's potentially limited rationality or bounded memory\cite{tambe2012game}.
-
-The purpose of this proposal is to design new methods for security games that are even more practical  in the sense that they would be autonomous in handling the uncertainty in the model and would actively be working at reducing it by interacting with the environment in which the game takes place. We desire to broaden the scope of repeated security game problems where the initial uncertainty about the players utilities can be overcome through using learning techniques  in conjunction with  repetitive plays of the game. These techniques are from the extremely active field of machine learning research.
+The main issues forming the primary focus of research in security games have been scalability, the ability for the designed methods to handle problems with very large number of actions for the players, or devising strategies that take advantage of the attacker's potentially limited rationality or bounded memory\cite{tambe2012game}.
+The purpose of this proposal is to design new methods for security games that, while keeping strong scalable guaranties are even more practical  in the sense that they would be autonomous in handling the uncertainty in the model and would actively be working at reducing it by interacting with the environment in which the game takes place. We desire to broaden the scope of repeated security game problems where the initial uncertainty about the players utilities can be overcome through using learning techniques  in conjunction with  repetitive plays of the game. These techniques are from the extremely active field of machine learning research.
 First we will look at new instances of these problem that are related to our area of bandit expertise and that serve real purpose.
-
-
-In a first setting, the environment chooses the rewards stochastically, based on some predetermined (however unknown) distributions. In security games this stochastic assumption helps model the unknown dynamics of the problem which both the defender and attacker can learn through interaction with the environment. In the second setting, no stochastic assumptions are made. Instead, an adversary is assumed to have arbitrarily chosen and designed the rewards
-\cite{Auer03NS}. This can be used to model a more pessimistic security game where the utilities are chosen adversarially by the attacker.
 To solve real world problems our higher priority fields of investigations will be:
 
 \begin{itemize}
-\item \textit{Explore stochastic assumption:} Aside from contributing to adversarial setting, One of our interest  is to make Stochastic assumptions when dealing with noise in the model and adversarial assumption when dealing with the adversary to make our approach both realistic and robust.
+\item \textit{Explore stochastic assumption and adversarial assumption:} In a first setting, the environment chooses the rewards stochastically, based on some predetermined (however unknown) distributions. In security games this stochastic assumption helps model the unknown dynamics of the problem which both the defender and attacker can learn through interaction with the environment. In the second setting, no stochastic assumptions are made. Instead, an adversary is assumed to have arbitrarily chosen and designed the rewards
+\cite{Auer03NS}. This can be used to model a more pessimistic security game where the utilities are chosen adversarially by the attacker.
+%Aside from contributing to adversarial setting, one of our interest  is to make Stochastic assumptions when dealing with noise in the model and adversarial assumption when dealing with the adversary to make our approach both realistic and robust.
 %%%A depending on the considered scenraio, it may make sense to consider the problem as adversarial or stochastic. The distinction will be made clear in the ... 
-So far stochastic noise in the model  in conjunction with learning has been untouched while it can happen when phenomenon are not inherently adversarial (sensor that work stochastically action that have stochastic outcomes, checkpoint might not stop deterministically the attacks and the probability of success needs to be determined, here learned).
+%So far stochastic noise in the model  in conjunction with learning has been untouched while it can happen when phenomenon are not inherently adversarial (sensor that work stochastically action that have stochastic outcomes, checkpoint might not stop deterministically the attacks and the probability of success needs to be determined, here learned).
 \item \textit{Efficient learning algorithms:} 
-Our goal is to have a theoretically sound approach by designing efficient algorithms for which we can provide finite sample analysis. Mention my previous work?
+Our goal is to have a theoretically sound approach by designing efficient algorithms for which we can provide finite sample analysis. %Mention my previous work?
 
-\item \textit{Scalable learning algorithms:} Extending the previous approaches to complex problem that involves some combinatorial structure is also important. Submodularity emtion work?
+\item \textit{Scalable learning algorithms:} Security solvers must typically handle a number of possible action that can be extremely large.
+Simplifying structure assumption such as combinatorial structure will be considered as well as the simplifying submodular property of the objective function.
 
 \item \textit{Different feedback structures:} The complexity of learning highly depends on the quality of the feedback that the learned can collect. From the most informative full information feedback to the many variations of partial feedback setting it is of importance, as discussed in Objective 1, to quantify how the nature of the feedback  affects the performance and to focus on scenario that correspond to real world example.
 
-\item \textit{Robust learning:} When dealing with security game, robustness is a key issue. While the need for learning inherantly add some security cost we want to look at instance of the learning problem that preserve some notion of robustness. The first way to be robust is to be very conservative and assume that an adversary actually chooses (in the most adversarial way) the data that we do not know. To that end we will propose extension the work of \cite{Balcan15CR}.
-
-While in some application it is ok just to minimise the cost of learning while playing (if the security games does not imply saving life for instance) in some application we do not want the learning process to happen during the use of the program but before hand. Then we can assume that we use of a pre launch exploration phase where we try to learned as precisely as possible the model given some budget constraint or some targeted performance guarantees. x To the end we will explore a setting where the learning happens before the real use like in pure exploration setting See Objective 1
-
- We might be required to learn defence strategies that are not necessarily the best in expectation but instead also guarantee not to possess large variances in their performance. Here we plan to make connection with risk averse learning algorithm.
- \item \textit{Adaptivity ?}
+\item \textit{Robust learning:} When dealing with security game, robustness is a key issue. We insure robustness in  three different manners  to insure. First, one can be  very conservative and assume that an adversary actually chooses (in the most adversarial way) the data that we do not know. Second, we introduce offline learning  where the test and the learning happens  before the strategy is actually use in the real world. Third, we might be required to learn defence strategies that do not possess large variances in their performance. 
+ %\item \textit{Adaptivity ?}
 \end{itemize}
 
 
-\textbf{Objective 1 Pure exploration in security games}
-
-
-\textbullet~ \textit{Pure exploration} is a relatively new setting, where the forecaster is only evaluated at the end of an exploration phase comprising of a limited number of interactions with the environment. %Contrary to the cumulative regret setting, the rewards collected before the end of the game are not taken into account.  
-This is particularly of interest in the practical scenario where the defender is able to safely examine her defensive strategies before applying it in the real world scenario.
+\textbf{Objective 1: Pure exploration in security games}\\
+%Contrary to the cumulative regret setting, the rewards collected before the end of the game are not taken into account.  
+In many practical scenarios the defender is in fact able to safely examine her defensive strategies before applying them in the real world scenario. For example, a security system at an airport can be tested many times before being deployed as the principal defence scheme. This feature of the problem allows the learning module of the corresponding security game to be readily captured by a recent bandit setting called \textit{pure exploration}, where the learner is only evaluated at the end of an exploration phase comprising of a limited number of interactions with the environment. 
 At this point, the defender's objective is to, either minimise the number of tests needed to identify an excellent strategy with a given level of confidence
 (following the \textit{fixed confidence} setting\cite{Maron93HR,Even-Dar06AE}), or to maximise her probability of identifying the best strategy given a fixed number of tests (following the \textit{fixed budget} setting\cite{Bubeck09PE,Audibert10BA}).
-
-
-Bringing the pure exploration to security games is a natural first phase of this proposal. As it is first one of the main domain of expertise of Victor and two it brings a first conservative way to address learning without bringing to much risks for the learner. Indeed in this setting the learning of the unknown model happens during an exploration phase before putting on the market.  This for instance means that he can run tests of the security in a variety of predetermined attack scenario and therefore  probe his own probability of defence.
-
-We would make the stochastic assumption as here it accounts for noise in our model and not adversary actions.
- The objective of this  approach is to determine  the best strategy during a given exploration phase and  is therefore  closely related to the general theory of optimisation and has been study in the discrete context of multi arm bandit as pure exploration problems \cite{Audibert10BA}. This initial work has been extended in a flurry variant setting where one tries to find the best(s) arms.
-Victor has a nice expertise in that and has participated to the extension and application of such a framework in more and more complex problem (cite my work?) and is working on extension to combinatorial bandits that would improve upon the seminal work by Chen.
-
-
- Taking into account the particular  structure of the problem will be necessary when dealing with Stackelberg equilibrium in security games. There the function to optimise is even more complex. What is the complexity here?
- 
- \paragraph{\textbullet$\;$  Complexity:} The hardness of the best arm identification problem in the stochastic setting can be interpreted as the total number of pulls required to discriminate the best arm(s) from the others. In simple multi-arm bandit setting it is defined as the sum of the complexity of each suboptimal options, where the complexity of a suboptimal option $i$ is invertionally proportional to the gap $\Delta_i= \mu^*- \mu_i$  the difference between the value of the the best option $\mu^*$ and the value of option $i$
- 
- More precisely the complexity $H$ is  defined as
+Indeed, security games under pure exploration have not been considered in previous work, and have a strong potential to bring new and interesting angles to the domain. Note that pure exploration has also proved useful in other practical scenarios: its application to parallel action selection in robotic planning has been extensively studied by the fellow \cite{Gabillon11MB}.
+%the fellow has explored the application of pure exploration bandit to parallel action seletcion in robotic planning.  
 %
-\begin{equation}
-H = \sum_{k} \frac{1}{\Delta_k^2},
-\end{equation}
+%is a natural addition to learning with security games,  
 %
-Extensions of this complexity notion have been designed in more complex setting like combinatorial bandits cite{Chen}. Note that Victor is currently working on a improved version of this result. In a combinatorial setting, the forecaster must make a recommendation that is of combinatorial structure
- The (combinatorial) decision set is $\C\subseteq 2^K$ is such that any decision $U \in \C$ is a set of arms $U\subseteq \K$ and its value is the sum of their values, $\mu_U = \sum_{i \in U} \mu_i$. The value gap between two decisions is denoted by $\Delta_{U,V} = \mu_U - \mu_V$ and $U^* = \arg\max_{U\in\C} \mu_U$ is the best decision 
- \begin{align*}
-\Delta^\odot_k = 
-\begin{cases} 
-\mu^* - \max\limits_{V\in\C: k\in V} \mu_V & \text{ if } k\notin V^* \\
-\mu^* - \max\limits_{V\in\C: k\notin V} \mu_V & \text{ if } k\in V^* \\
-\end{cases}
-\end{align*}
+%the possibilities and limitations
+%what kinds of guarantees?
+%new complexity
 
-In case of of games the picture would be even more complex as the complexity would depend on the actions that adverasry have available.
+%Security games under pure exploration bring a new angle have not been previously considered. 
 
-One first step is to relax the problem as shown in Krause et al finding the best response to a given adversary. This is known to be is NP hard problem  but can be solve almost optimally be a greedy algorithm thank to a sub modularity property of the problem. This gives rise to a first objective which would be to learning optimise stochastic submodular function under a pure exploration setting.
-Note that I worked on similar subject with learning in submodular functions.
+%Bringing the pure exploration to security games is a natural first phase of this proposal. 
+%As it is first one of the main domain of expertise of Victor and two it brings a first 
+%conservative way to address learning without bringing too much risks for the learner. 
+%Indeed, in this setting the learning of the unknown model happens during an exploration phase before final launch.  This for instance means that he can run tests of the security in a variety of predetermined attack scenario and therefore  probe his own probability of defence.
+What makes this setting particularly well-suited to real-world security applications is in that, 
+1. unlike existing work, no assumption is required to be made about the defender's knowledge of its utility matrix $A$. Instead, the utilities can be learned offline through probing the individual entries of $A$, and 
+2. the stochastic framework gives a natural model for the players' uncertainty about the environment.
+
+As discussed earlier, in light of the robustness required by real security schemes, 
+it is necessary for the designed algorithms to not only be efficient but also possess theoretical guarantees. 
+To this end, we will first analyse the true complexity of the problem in the setting described above, 
+and then design an algorithm to best capture the obtained hardness.   
+%The objective of this  approach is to determine  the best strategy during a given exploration phase and  is therefore  closely related to the general theory of optimisation and has been study in the discrete context of multi arm bandit as pure exploration problems \cite{Audibert10BA}. This initial work has been extended in a flurry variant setting where one tries to find the best(s) arms.
+%Victor has a nice expertise in that and has participated to the extension and application of such a framework in more and more complex problem (cite my work?) and is working on extension to combinatorial bandits that would improve upon the seminal work by Chen.
+
+
+% Taking into account the particular  structure of the problem will be necessary when dealing with Stackelberg equilibrium in security games. There the function to optimise is even more complex. What is the complexity here?
+The hardness of the best arm identification problem in the stochastic setting can be interpreted as the total number of pulls required to discriminate the best arm(s) from the others. In a simple multi-arm bandit setting, this is defined as the sum of the complexity of each suboptimal option, where the complexity of a suboptimal option $i$ is inversely proportional to the gap $\Delta_i= \mu^*- \mu_i$ between the value of the best option $\mu^*$ and that of option $i$.
+More precisely the complexity $H$ is  defined as $H = \sum_{k} \frac{1}{\Delta_k^2}.$
+
+%
+%\begin{equation*}
+%
+%\end{equation*}
+%
+Extensions of this notion have been designed for combinatorial bandits \cite{chen2014combinatorial}. The fellow is currently working on a improved version of the state-of-the-art result. The complexity of an arm defined in these combinatorial games is  more complex than in the simple multi-armed bandit problem as it involves combinatorial quantities. Similarly in a security games, we expect the complexities for the defender to depend also on the actions available to the attacker.
+%In a combinatorial setting, the forecaster must make a recommendation that is of combinatorial structure
+% The (combinatorial) decision set is $\C\subseteq 2^K$ is such that any decision $U \in \C$ is a set of arms $U\subseteq \K$ and its value is the sum of their values, $\mu_U = \sum_{i \in U} \mu_i$. The value gap between two decisions is denoted by $\Delta_{U,V} = \mu_U - \mu_V$ and $U^* = \arg\max_{U\in\C} \mu_U$ is the best decision 
+% \begin{align*}
+%\Delta^\odot_k = 
+%\begin{cases} 
+%\mu^* - \max\limits_{V\in\C: k\in V} \mu_V & \text{ if } k\notin V^* \\
+%\mu^* - \max\limits_{V\in\C: k\notin V} \mu_V & \text{ if } k\in V^* \\
+%\end{cases}
+%\end{align*}
+
+Another issue that we want to address within Objective 1) is the scalability of our algorithms. It is natural to think that one could make use of the natural combinatorial nature of the actions in security games (placing a limited number of checkpoints in a finite number of locations). Indeed enumerating all the actions as in the standard formulation of security games makes the computations rapidly intractable. Therefore bringing our expertise in combinational pure exploration bandits could prove useful. We moreover propose a simplifying first step to address even further the issue of scalability in  this combinatorial problem. Making use of some submodularity property that often arise in the context of sensor (or checkpoint) placement can provide tractable and almost optimal algorithms. Therefore submodular combinatorial pure exploration is a first step.
+
+%One first step is to relax the problem as shown in Krause et al finding the best response to a given adversary. This is known to be is NP hard problem  but can be solve almost optimally be a greedy algorithm thank to a sub modularity property of the problem. This gives rise to a first objective which would be to learning optimise stochastic submodular function under a pure exploration setting.
+%Note that I worked on similar subject with learning in submodular functions.
+
+
+\textbf{Objective 2:  Repeated Network Security Games}
+The idea would be to  extend the work of Balcan using more complex bandit algorithms. They use a version with k known attackers. We can assume that k is extremely large but there is some  structure that permits us to use for instance combinatorial bandits.
+
+The security issue naturally has application in graph problem that model the network of roads/ connection between computers that agents might need to secure. Therefore there has been study that apply game theory to this problems. For instance it has been used to monitor road barrage in mumbai (connection) The goal is there to put some check point on a road to stop some terrorist. Its a one shot game where you try to minimise the probability of the player to pass.  Utilities are not really defined and complex here You just want to maximise the probability of catching the attacker. We are interested in a version of this game that is repeated . Everyday the same problem arises. We would minimise the cumulative regret. Therefore the defender can be adaptive and if the attacker is not smart and repeat always the same plan we will catch him often (not totally a worse case scenario). This can be seen actually has a specific problem of adversarial combinatorial bandits where the  attacker is limited to a very specific structure of losses which are path in a graph. We can expect to use the specificity of the graph by using some result from spectral graph theory. Maybe also we can use this theory to solve some issue with the scalability of the algorithm.
+
+\textbf{Objective 3: Regret Analysis of repeated security games}
+link to ronald ortner
+link to Bruno scherrer
 
 Connections with risk averse (Cite the work of Amir Sani) maybe a separate section for this.
 talk about the classical cumulative regret setting also!
 
 This also ask the long term question of convergence when both player are learning at the same time their utilities.
-
-\textbf{Objective 2 Learning  more complex adversarially chosen attacker in  Stakleberg}
-The idea would be to  extend the work of Balcan using more complex bandit algorithms. They use a version with k known attackers. We can assume that k is extremely large but there is some  structure that permits us to use for instance combinatorial bandits.
-
-
-
-\textbf{Objective 3 Repeated Network Security Games}
-The security issue naturally has application in graph problem that model the network of roads/ connection between computers that agents might need to secure. Therefore there has been study that apply game theory to this problems. For instance it has been used to monitor road barrage in mumbai (connection) The goal is there to put some check point on a road to stop some terrorist. Its a one shot game where you try to minimise the probability of the player to pass.  Utilities are not really defined and complex here You just want to maximise the probability of catching the attacker. We are interested in a version of this game that is repeated . Everyday the same problem arises. We would minimise the cumulative regret. Therefore the defender can be adaptive and if the attacker is not smart and repeat always the same plan we will catch him often (not totally a worse case scenario). This can be seen actually has a specific problem of adversarial combinatorial bandits where the  attacker is limited to a very specific structure of losses which are path in a graph. We can expect to use the specificity of the graph by using some result from spectral graph theory. Maybe also we can use this theory to solve some issue with the scalability of the algorithm.
-
-\textbf{Objective 4 Regret Analysis of repeated security games}
-link to ronald ortner
-link to Bruno scherrer
-
 
 \textbullet~ The \textit{cumulative regret} setting is the standard formulation for multi-armed bandits. In this formulation, the objective for the forecaster is to minimize the expected cumulative regret after $n$ pulls $R(n)$ defined as
 %
@@ -196,12 +203,6 @@ This is an online game where, at each time set $t$ of the game, a fundamental tr
 %A popular efficient  algorithm for it is Thompson Sampling as it has both proved very efficient\cite{Chapelle11EE}, handy and as recently started to be theoretically good~\mbox{\cite{Kaufmann12TS}}. 
 
 %Note that a very numerous of variation of the initial games ranging from considering  infinite number of arms to continuous actions\cite{Wang08AI,Abbasi-Yadkori11IA,Dani07TP} permits these methods to adapt to a very large mount of challenges
-
-\textbullet~ The \textit{pure exploration} is a relatively new setting, where the forecaster is only evaluated at the end of an exploration phase comprising a limited number of interaction with the environment. %Contrary to the cumulative regret setting, the rewards collected before the end of the game are not taken into account.  
-This is of interest in security games where the defender could test safely his defensive strategies before putting it in application in the real world.
-The objective would either be for the defender to try to minimize the number of tests (and hence the cost) needed to identify an excellent strategy with a given level of confidence
-(following the \textit{fixed confidence} setting\cite{Maron93HR,Even-Dar06AE}), or to maximize the probability to identify the the best strategy given a fixed number or tests (following the \textit{fixed budget} setting\cite{Bubeck09PE,Audibert10BA}).% the number of tests of the exploration phase is fixed and is known by the defender, and the objective is to maximize the probability of returning the best strategy at the end of the phase. 
-
 
 \noindent \textbf{\textit{\\Originality and innovative aspects of the research programme:}}\\
 
