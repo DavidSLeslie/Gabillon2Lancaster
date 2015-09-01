@@ -3,7 +3,7 @@
 \label{sec:quality}
 
 A critical concern in the modern world is security. Effectively protecting the ports, airports, trains and other transportation systems from malicious attacks, fighting the trafficking of drugs and firearms, and securing proprietary and sensitive information over the ever-growing cyber-networks, comprise some of the principal axes of this critical task. The main challenge in all of these problems is that maximum security must be obtained with a limited number of available resources. For instance, the total number of security agents available to simultaneously protect a multitude of designated targets may not be sufficient to provide full security coverage at an airport. This calls for the design of appropriate resource allocation techniques which, given the available resources, would result in maximum security. %Clearly, an important feature of these methods must be to provide highly unpredictable strategies, while devising appropriate target priorities in the presence of uncertainty about the adversaries' interests.  
-
+ 
 Security resource allocation and scheduling problems comprise one of the many application areas that have recently been shown to greatly benefit from game-theoretic approaches. Indeed, as a solid mathematical framework to model strategic decision making, game theory has proved useful in many real-world applications from economics and political science to logic, computer science and psychology. In this paradigm, the problem is cast as a ``game'' and the objective is to find a solution whereby each ``player'' makes choices to maximise her own \textit{utilities}, which may often be in conflict with those of her opponent. A ``security game'' corresponds to a competition between a defender and an attacker. To solve a security game, all possible actions (attacks and defences) of the two players are enumerated, and for each player an outcome (value) is assigned, which depends on the pair of actions taken by both players. In cases where these outcomes are known, game-theoretic approaches have provided impressive results. Since 2007, the so-called ARMOR software \cite{pita2008deployed} is used at the Los Angeles International Airport (LAX) to effectively determine checkpoints on the roadways leading to the airport, and to canine patrol routes within terminals. Similarly, such programs as IRIS \cite{tsai2009iris}, PROTECT \cite{shieh2012protect}, and TRUSTS \cite{yin2012trusts} are respectively being deployed at the US Federal Air Marshals, the US coast guard patrolling, and the Los Angeles Metro system's fare inspection strategy. 
 
 A severe limitation of these models is that the true utility functions are usually unknown and must be estimated by experts or obtained from historical data. As a result, the potentially high estimation errors or the lack of historical data from which is suffering any newly established security system, will often render the security game solver useless. 
@@ -117,7 +117,7 @@ Simplifying structure assumption such as combinatorial structure will be conside
 \end{itemize}
 
 
-\textbf{Objective 1: Pure exploration in security games}\\
+\textbf{Objective 1: Pure exploration in security games.}\\
 %Contrary to the cumulative regret setting, the rewards collected before the end of the game are not taken into account.  
 In many practical scenarios the defender is in fact able to safely examine her defensive strategies before applying them in the real world scenario. For example, a security system at an airport can be tested many times before being deployed as the principal defence scheme. This feature of the problem allows the learning module of the corresponding security game to be readily captured by a recent bandit setting called \textit{pure exploration}, where the learner is only evaluated at the end of an exploration phase comprising of a limited number of interactions with the environment. 
 At this point, the defender's objective is to, either minimise the number of tests needed to identify an excellent strategy with a given level of confidence
@@ -175,21 +175,23 @@ Another issue that we want to address within Objective 1) is the scalability of 
 %Note that I worked on similar subject with learning in submodular functions.
 
 
-\textbf{Objective 2:  Repeated Network Security Games}
-The idea would be to  extend the work of Balcan using more complex bandit algorithms. They use a version with k known attackers. We can assume that k is extremely large but there is some  structure that permits us to use for instance combinatorial bandits.
+\textbf{Objective 2:  Repeated Network Security Games.}
+Security problems often need to secure complex structures and networks. Taking advantage of the knowledge of these structure is of great importance to create efficient and computational tractable algorithms. In the case of graph structure, graph decomposition  tools are relevant. For this purpose a collaboration with Michal Valko , a word famous expert of active learning on graphs and part of the partner organisation Inria Lille, will be of great help.
+ 
+%cite mumbai
 
-The security issue naturally has application in graph problem that model the network of roads/ connection between computers that agents might need to secure. Therefore there has been study that apply game theory to this problems. For instance it has been used to monitor road barrage in mumbai (connection) The goal is there to put some check point on a road to stop some terrorist. Its a one shot game where you try to minimise the probability of the player to pass.  Utilities are not really defined and complex here You just want to maximise the probability of catching the attacker. We are interested in a version of this game that is repeated . Everyday the same problem arises. We would minimise the cumulative regret. Therefore the defender can be adaptive and if the attacker is not smart and repeat always the same plan we will catch him often (not totally a worse case scenario). This can be seen actually has a specific problem of adversarial combinatorial bandits where the  attacker is limited to a very specific structure of losses which are path in a graph. We can expect to use the specificity of the graph by using some result from spectral graph theory. Maybe also we can use this theory to solve some issue with the scalability of the algorithm.
+A very interesting problem is the problem of (mobile) smuggler arrest in a network\cite{jain2011double} an problem that is often motivated in the literature as modelling a  response  to  the  Mumbai  attacks  of  2008, after which the  Mumbai  police
+have started to schedule a limited number of inspection checkpoints
+on the road network throughout the city. This problem has not been studied in its repeated form, where a pursuit-evasion games is played multiple times against a series of different smugglers. Therefore the strategy of the defender is not adaptive to the previous observations. It brings together two interesting work. First the work on combinatorial bandits which is somehow more general and therefore does not capture all the subtility of this precise problem and is suboptimal as it does not restrict the second player to play a path in the graph. Second it is a generalisation of the work of Balcan\cite{Balcan15CR} to the case where the number of $k$ unknown matrix is extremely large but posses a combinatorial structure as each matrix correspond to a path in a graph.  It can be seen as
 
-\textbf{Objective 3: Regret Analysis of repeated security games}
-link to ronald ortner
-link to Bruno scherrer
+%The idea would be to  extend the work of Balcan using more complex bandit algorithms. They use a version with k known attackers. We can assume that k is extremely large but there is some  structure that permits us to use for instance combinatorial bandits.
 
-Connections with risk averse (Cite the work of Amir Sani) maybe a separate section for this.
-talk about the classical cumulative regret setting also!
+%The security issue naturally has application in graph problem that model the network of roads/ connection between computers that agents might need to secure. Therefore there has been study that apply game theory to this problems. For instance it has been used to monitor road barrage in mumbai (connection) The goal is there to put some check point on a road to stop some terrorist. Its a one shot game where you try to minimise the probability of the player to pass.  Utilities are not really defined and complex here You just want to maximise the probability of catching the attacker. We are interested in a version of this game that is repeated . Everyday the same problem arises. We would minimise the cumulative regret. Therefore the defender can be adaptive and if the attacker is not smart and repeat always the same plan we will catch him often (not totally a worse case scenario). This can be seen actually has a specific problem of adversarial combinatorial bandits where the  attacker is limited to a very specific structure of losses which are path in a graph. We can expect to use the specificity of the graph by using some result from spectral graph theory. Maybe also we can use this theory to solve some issue with the scalability of the algorithm.
 
-This also ask the long term question of convergence when both player are learning at the same time their utilities.
+\textbf{Objective 3: Regret Analysis of Repeated Security Games.}
+In some applications where a newly created security systems is both not provided with any  historical data and cannot be tested before being use in production, then the learning must be performed online. In this contact it is of high importance that the learning is done as fast as possible. This means that only providing an analysis that shows the asymptotic convergence is definitely not enough. this calls for algorithms that are provided with their finite time sample analysis.
 
-\textbullet~ The \textit{cumulative regret} setting is the standard formulation for multi-armed bandits. In this formulation, the objective for the forecaster is to minimize the expected cumulative regret after $n$ pulls $R(n)$ defined as
+The \textit{cumulative regret} setting is the standard formulation for multi-armed bandits. In this formulation, the objective for the forecaster is to minimize the expected cumulative regret after $n$ pulls $R(n)$ defined as
 %
 \begin{equation*}
 R(n)=\max_i\sum^n_{t=1} l^t_{i}-\E\left[\sum_{t=1}^n l^t_{I(t)}\right].
@@ -198,6 +200,10 @@ R(n)=\max_i\sum^n_{t=1} l^t_{i}-\E\left[\sum_{t=1}^n l^t_{I(t)}\right].
 For security games, the cumulative regret is the difference between the sum of rewards collected by always using the best security strategy in hindsight and the sum of rewards actually collected by the forecaster.
 This is an online game where, at each time set $t$ of the game, a fundamental trade-off arises for the forecaster between the simultaneous need to select the security strategy solution he currently thinks is the best in order to maximise the immediate security given his current knowledge  (exploitation)  while also wanting to test possible other strategies that might or might not be better (exploration).
 
+Our goal here will be to provide a regret analysis for the online stochastic repeated security games. The first step will be study the how to design a new algorithm borrowing ideas from the UCRL algorithm \cite{Ortener} that was extending the bandits ideas of UCB and analysis to general reinforcement learning problems
+For this project collaboration with  Bruno Scherrer, a fellow's coauthor, from Inria Nancy is envisageable as Bruno has recently analyse how reinforcement learning asymptotic analysis could be applied to zero sum games.
+
+Finally an important other additional requirement is that we learn security strategy that are not only of good quality in average but also whose performance is not subject to too much variance when used. This requirement has been well-studied in the statistical community has a risk-averse requirement. Recently it has been extended to bandit analysis  (Cite the work of Amir Sani) this calls for an implementation in the security games specific context.
 
 
 %A popular efficient  algorithm for it is Thompson Sampling as it has both proved very efficient\cite{Chapelle11EE}, handy and as recently started to be theoretically good~\mbox{\cite{Kaufmann12TS}}. 
@@ -207,10 +213,7 @@ This is an online game where, at each time set $t$ of the game, a fundamental tr
 \noindent \textbf{\textit{\\Originality and innovative aspects of the research programme:}}\\
 
  
-\noindent \textbf{\textit{\\timeliness and relevance:}}\\
-Security is booming since 5 years
-mahcine laerining also
-the conjuntion of the two is definietly relevant but still largely unexplored
-Europe wants security
-migrants/ spy
+\noindent \textbf{\textit{\\Timeliness and relevance:}}\\
+Security games has found numerous applications in the recent 10 years and has proved that it could bring a significant improvement over  systems designed by humans. Making this systems even more autonomous so that they can autonomously improve by constantly learning is a key issue to bring low maintenance security systems. We believe machine learning is providing most of the necessary tool to reach this goal. Machine Learning is one of the most rapidly growing community in computer science research as it is currently making a difference in key industrial sectors already  building strong recommendation systems, and being used by the most important companies of our time to create self-driving cars or new pattern recognition algorithms.   The connection between security games and machine learning is evident, work that have connects those two worlds are still rare and it will be the source of many new research challenges. 
+Finally bringing more robust security systems is of high importance for Europe has recent event have shown how ensuring the security of network communications from spy or securing public transportation is crucial.
  
