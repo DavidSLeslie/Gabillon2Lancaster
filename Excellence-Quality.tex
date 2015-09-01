@@ -197,7 +197,7 @@ R(n)=\max_i\sum^n_{t=1} l^t_{i}-\E\left[\sum_{t=1}^n l^t_{I(t)}\right].
 For security games, the cumulative regret is the difference between the sum of rewards collected by always using the best security strategy in hindsight and the sum of rewards actually collected by the forecaster.
 This is an online game where, at each time set $t$ of the game, a fundamental trade-off arises for the forecaster between the simultaneous need to select the security strategy solution he currently thinks is the best in order to maximise the immediate security given his current knowledge  (exploitation)  while also wanting to test possible other strategies that might or might not be better (exploration).
 
-Our goal here will be to provide a regret analysis for the online stochastic repeated security games. The first step will be study  how to design a new algorithm borrowing ideas from the UCRL algorithm \cite{auer2009near} that was extending the bandits ideas of the classical UCB analysis to general reinforcement learning problems
+Our goal here will be to provide a regret analysis for the online stochastic repeated security games. The first step will be to study  how to design a new algorithm borrowing ideas from the UCRL algorithm \cite{auer2009near} that was extending the bandits ideas of the classical UCB analysis to general reinforcement learning problems
 For this project collaboration with  Bruno Scherrer, a fellow's coauthor, from Inria Nancy is desirable as he has recently analysis how reinforcement learning asymptotic analysis could be applied to zero sum games\cite{scherrerapproximate}.
 
 %talk about the UCT stuff?
@@ -210,7 +210,9 @@ Finally an important other possible additional requirement is that we learn secu
 %Note that a very numerous of variation of the initial games ranging from considering  infinite number of arms to continuous actions\cite{Wang08AI,Abbasi-Yadkori11IA,Dani07TP} permits these methods to adapt to a very large mount of challenges
 
 \noindent \textbf{\textit{\\Originality and innovative aspects of the research programme:}}\\
-
+This grant proposal is original has it proposes to develop a bridge between two areas of research (Security games and Machine learning) that have both proved there practical capacities but have only rarely been used jointly. By addressing some of the fundamental challenges of this connection we expect to bring more attention to the potential of this connection and bring the two communities to collaborate more in order to design software that solve important security problems.
+Our approach is to design algorithms are both theoretically grounded and of practical use in real world problems.
+Moreover by collaborating with with the Security Lancaster Departement in the University of Lancaster, we hope to apply and test our methods to real world problems.
  
 \noindent \textbf{\textit{\\Timeliness and relevance:}}\\
 Security games has found numerous applications in the recent 10 years and has proved that it could bring a significant improvement over  systems designed by humans. Making this systems even more autonomous so that they can autonomously improve by constantly learning is a key issue to bring low maintenance security systems. We believe machine learning is providing most of the necessary tool to reach this goal. Machine Learning is one of the most rapidly growing community in computer science research as it is currently making a difference in key industrial sectors already  building strong recommendation systems, and being used by the most important companies of our time to create self-driving cars or new pattern recognition algorithms.   The connection between security games and machine learning is evident, work that have connects those two worlds are still rare and it will be the source of many new research challenges. 
