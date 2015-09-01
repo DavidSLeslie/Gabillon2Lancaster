@@ -93,13 +93,13 @@ Recently, an extended analysis has been given\cite{Balcan15CR} for the case of m
 
 
 \noindent \textit{\textbf{\\Main Goal}}\\
-The main issues forming the primary focus of research in security games have been scalability, the ability for the designed methods to handle problems with very large number of actions for the players, or devising strategies that take advantage of the attacker's potentially limited rationality or bounded memory\cite{tambe2012game}.
-The purpose of this proposal is to design new methods for security games that, while keeping strong scalable guaranties are even more practical  in the sense that they would be autonomous in handling the uncertainty in the model and would actively be working at reducing it by interacting with the environment in which the game takes place. We desire to broaden the scope of repeated security game problems where the initial uncertainty about the players utilities can be overcome through using learning techniques  in conjunction with  repetitive plays of the game. These techniques are from the extremely active field of machine learning research.
+The main issues that have been considered so far in the literature are scalability, the ability for the designed methods to handle problems with very large number of actions for the players, or devising strategies that take advantage of the attacker's potentially limited rationality or bounded memory\cite{tambe2012game}.
+The purpose of this proposal is to design new methods for security games that, while keeping strong scalable guaranties are even more practical  in the sense that they would be autonomous in handling the uncertainty in the model and would actively be working at reducing it by interacting with the environment in which the game takes place. Specifically, we desire to broaden the scope of repeated security game problems where the initial uncertainty about the players utilities can be overcome through using learning techniques  in conjunction with  repetitive plays of the game. These techniques are from the extremely active field of machine learning research.
 First we will look at new instances of these problem that are related to our area of bandit expertise and that serve real purpose.
-To solve real world problems our higher priority fields of investigations will be:
+To solve real world problems our \textit{long-term} goals are:
 
 \begin{itemize}
-\item \textit{Explore stochastic assumption and adversarial assumption:} In a first setting, the environment chooses the rewards stochastically, based on some predetermined (however unknown) distributions. In security games this stochastic assumption helps model the unknown dynamics of the problem which both the defender and attacker can learn through interaction with the environment. In the second setting, no stochastic assumptions are made. Instead, an adversary is assumed to have arbitrarily chosen and designed the rewards
+\item \textit{Explore stochastic and adversarial assumptions:} In a first setting, the environment chooses the rewards stochastically, based on some predetermined (however unknown) distributions. In security games this stochastic assumption helps model the unknown dynamics of the problem which both the defender and attacker can learn through interaction with the environment. In the second setting, no stochastic assumptions are made. Instead, an adversary is assumed to have arbitrarily chosen and designed the rewards
 \cite{Auer03NS}. This can be used to model a more pessimistic security game where the utilities are chosen adversarially by the attacker.
 %Aside from contributing to adversarial setting, one of our interest  is to make Stochastic assumptions when dealing with noise in the model and adversarial assumption when dealing with the adversary to make our approach both realistic and robust.
 %%%A depending on the considered scenraio, it may make sense to consider the problem as adversarial or stochastic. The distinction will be made clear in the ... 
@@ -107,15 +107,15 @@ To solve real world problems our higher priority fields of investigations will b
 \item \textit{Efficient learning algorithms:} 
 Our goal is to have a theoretically sound approach by designing efficient algorithms for which we can provide finite sample analysis. %Mention my previous work?
 
-\item \textit{Scalable learning algorithms:} Security solvers must typically handle a number of possible action that can be extremely large.
-Simplifying structure assumption such as combinatorial structure will be considered as well as the simplifying submodular property of the objective function.
+\item \textit{Scalable learning algorithms:} Security solvers must typically handle a number of possible actions that can be extremely large.
+Simplifying structure assumptions such as combinatorial structure will be considered as well as the simplifying submodular property of the objective function.
 
-\item \textit{Different feedback structures:} The complexity of learning highly depends on the quality of the feedback that the learned can collect. From the most informative full information feedback to the many variations of partial feedback setting it is of importance, as discussed in Objective 1, to quantify how the nature of the feedback  affects the performance and to focus on scenario that correspond to real world example.
+\item \textit{Different feedback structures:} The complexity of learning highly depends on the quality of the feedback that the learned can collect. From the most informative full information feedback to the many variations of partial feedback setting it is of importance, as discussed in Objective 1, to quantify how the nature of the feedback  affects the performance and to focus on scenario that correspond to real world examples.
 
-\item \textit{Robust learning:} When dealing with security game, robustness is a key issue. We insure robustness in  three different manners  to insure. First, one can be  very conservative and assume that an adversary actually chooses (in the most adversarial way) the data that we do not know. Second, we introduce offline learning  where the test and the learning happens  before the strategy is actually use in the real world. Third, we might be required to learn defence strategies that do not possess large variances in their performance. 
+\item \textit{Robust learning:} When dealing with security games, robustness is a key issue. We propose to insure robustness in  three different ways. First, one can be  very conservative and assume that an adversary actually chooses (in the most adversarial way) the data that we do not know. Second, we introduce offline learning  where the test and the learning happen  before the strategies is actually use in the real world. Third, we might be required to learn defence strategies that do not possess large variances in their performance. 
  %\item \textit{Adaptivity ?}
 \end{itemize}
-
+The \textit{short-term} plan in achieving these goals is outline in three main objectives.
 
 \textbf{Objective 1: Pure exploration in security games.}\\
 %Contrary to the cumulative regret setting, the rewards collected before the end of the game are not taken into account.  
