@@ -238,12 +238,12 @@ Dr Gabillon will be embedded within the statistical learning group which is lead
 \label{sec:maturity}
 \input{Capacity.tex}
 
-[I PUT THE FOLLOWING TEXT IN HERE, WHICH DOESN'T SEEM TO HAVE MADE IT INTO Capacity.tex]
-
-Dr Gabillon's intention is to continue developing until he is able to build and lead a multi-disciplinary research group, developing innovative and impactful research in machine learning for decision-making, in collaboration with industry partners.  The initial stages of the researcher's career indicate that this is a realistic goal, with multiple high-quality publications in a short time frame, and already significant international research experience (see Section \ref{sec:cv}).  He has worked both as an academic researcher, and within a company \TODO{Which company, doing what?}, and the proposed research will broaden his research foundations significantly to allow further development as an independent researcher.  Working closely with Lancaster University's Data Science Institute, and STOR-i Centre for Doctoral Training, will not only develop a professional network of impact-aware academics, it will foster skills in the development of academia/industry partnerships.
-
-Furthermore, Dr Gabillon will establish a 2-year Personal Career Development Plan which he will update regularly under the mentorship of Prof.\ Leslie, the project Supervisor.  The Fellow will have access to Lancaster's central training resources, which will be used to further develop skills in teaching, public engagement, research supervision and management, which will contribute greatly to a position of professional maturity.  Moreover, by participating in weekly seminars, group meetings, and informal gatherings, the Fellow will have the opportunity to receive valuable feedback about his career development from the experience scientists in the Statistics Research Group.  This research group is visited by dozens of internationally-leading scientists each year, which will provide further opportunities to develop a research network and reach a position of professional maturity.
-
+%[I PUT THE FOLLOWING TEXT IN HERE, WHICH DOESN'T SEEM TO HAVE MADE IT INTO Capacity.tex]
+%
+%Dr Gabillon's intention is to continue developing until he is able to build and lead a multi-disciplinary research group, developing innovative and impactful research in machine learning for decision-making, in collaboration with industry partners.  The initial stages of the researcher's career indicate that this is a realistic goal, with multiple high-quality publications in a short time frame, and already significant international research experience (see Section \ref{sec:cv}).  He has worked both as an academic researcher, and within a company \TODO{Which company, doing what?}, and the proposed research will broaden his research foundations significantly to allow further development as an independent researcher.  Working closely with Lancaster University's Data Science Institute, and STOR-i Centre for Doctoral Training, will not only develop a professional network of impact-aware academics, it will foster skills in the development of academia/industry partnerships.
+%
+%Furthermore, Dr Gabillon will establish a 2-year Personal Career Development Plan which he will update regularly under the mentorship of Prof.\ Leslie, the project Supervisor.  The Fellow will have access to Lancaster's central training resources, which will be used to further develop skills in teaching, public engagement, research supervision and management, which will contribute greatly to a position of professional maturity.  Moreover, by participating in weekly seminars, group meetings, and informal gatherings, the Fellow will have the opportunity to receive valuable feedback about his career development from the experience scientists in the Statistics Research Group.  This research group is visited by dozens of internationally-leading scientists each year, which will provide further opportunities to develop a research network and reach a position of professional maturity.
+%
 
 \section{Impact}
 \label{sec:impact}
@@ -296,6 +296,20 @@ Describe the different work packages. The proposal should be designed in such a 
 The schedule should be in terms of number of months elapsed from the start of the project.
 }
 
+\paragraph{Work packages}
+\begin{description}
+\item[WP1: Combinatorial bandits] The Fellow will develop new approaches to combinatorial bandits, investigating the pure exploration problem and the online regret problem.  This WP builds upon current research of the Fellow and can be completed in months 1--6.  This will result in {\bf Deliverable 1.1}, a paper on pure exploration in combinatorial bandits, and {\bf Deliverable 1.2}, a paper on regret in combinatorial bandits with submodular reward structures.
+\item[WP2: Security games] Objectives 2 and 3 will be considered in this Work Package, which will develop algorithms for both pure exploration and online performance guarantees in security games.  This WP brings together the knowledge of the Researcher and the Supervisor, and will also be started in Month 1, but will take longer to complete due to the greater level of novelty for the Researcher, so will continue for 12 months.  {\bf Deliverable 2.1} is a paper on pure exploration in security games; {\bf Deliverable 2.2} is a paper on online regret bounds in security games.
+\item[WP3: Combinatorial security games] The Fellow will address Objective 4 with the development  of methods for security games with combinatorial action spaces. This package combines the results of WP1 and WP2.  After completion of WP1, the Researcher will switch attention to working in combinatorial games in parallel with WP2, and this WP will continue until the end of the project.  {\bf Deliverable 3.1} is a paper presenting the results of this research.
+\item[WP4: Network defence] Objective 5 will be addressed, with the application of combinatorial work (WP1 and WP3) to network problems. The Fellow will visit Dr Michal Valko learn about techniques in networks and how to integrate them with the previously-developed combinatorial results.  He will also collaborate with researchers from Security Lancaster to develop applications in supply chain protection.  This package will be started after WP2 has been completed in month 12, and run until the end of the project. {\bf Deliverable 4.1} is a paper describing the a bandit approach to network defence, and {\bf Deliverable 4.2} is a paper describing the game-theoretical results.
+\end{description}
+
+\paragraph{Major milestones}
+\begin{description}
+\item[Milestone 1] is the completion of WP1. If strong results are obtained in this first phase of research, then extending to combinatorial games under an assumption that the attacker always plays a best response to the current mixed strategy will be relatively straightforward, and greater emphasis can be placed on WP3 straight away.  If the results here are not so strong, more effort will need to be given to WP2 in order to obtain suitable building blocks for WP3.
+\item[Milestone 2] is at the end of 1 year of the project, when WP1 and WP2 will both be completed, and WP3 is in progress. This will give an opportunity to take stock and decide the problems to be addressed in WP4. If the game-theoretical results in WP2 are strong, and WP3 is progressing well, then the full game-theoretical approach can be addressed directly in WP4.  However weaker game-theoretical results may necessitate initial focus on bandit approaches in WP4.
+\end{description}
+
 \subsection{Appropriateness of the management structure and procedures, including quality management and risk management}
 
 {\em
@@ -308,11 +322,12 @@ Develop your proposal according to the following lines:
 
 The Research Support Office at Lancaster University has extensive experience of managing European project grants, and will be responsible for administering the project budget and the legal aspects.  The Fellow will be a member of the Department of Mathematics and Statistics, and more specifically the Statistical Learning group lead by Prof.\ Leslie.  The Fellow will also be assigned a formal mentor under standard Lancaster University human resources procedures, who will be a second point of contact for the Researcher.  During the project, Dr Gabillon will be responsible for the research work, and will meet weekly with Prof.\ Leslie to discuss results, challenges and research strategies.  The Fellow will also be responsible for the management of the project; he will be supervised in this task through monthly management and mentoring meetings with the Supervisor, in which progress against the workplan and career development plan will be discussed.
 
-\TODO{Discuss risk management.}
+Clearly there are risks at each stage of an ambitious research project such as this. The two-pronged approach mitigates some of this risk: if developments in combinatorial approaches prove to be difficult then greater focus will be placed on the game theory, and vice versa.  That being said, both of WP1 and WP2 contain elements that are clearly addressable based on current work, thus a solid foundation can be easily obtained while the Fellow and Supervisor develop a working relationship, in preparation for the more ambitious objectives in the latter part of the project.
 
 \begin{figure}[htbp]
+{\em
 Gantt chart
-Reflecting work package, secondments, training events and dissemination / public engagement activities
+Reflecting work package, secondments, training events and dissemination / public engagement activities}
 \begin{center}
 
 \begin{ganttchart}[
@@ -338,16 +353,23 @@ Reflecting work package, secondments, training events and dissemination / public
     title label node/.append style={below left=7pt and -3pt}
   ]{Month:\quad1}{1}
   \gantttitlelist{2,...,24}{1} \\
-  \ganttgroup{Work Package}{1}{10} \\
-  \ganttgroup{Deliverable}{5}{15} \\
-  \ganttgroup{Milestone}{5}{5} \\
-  \ganttgroup{Secondment}{20}{23} \\
-  \ganttgroup{Conference}{16}{16} \\
-  \ganttgroup{Workshop}{17}{17} \\
-  \ganttgroup{Seminar}{18}{18} \\
-  \ganttgroup{Dessemination}{23}{24} \\
-  \ganttgroup{Public engagement}{4}{5} \\
-  \ganttgroup{Other}{7}{10}
+  \ganttgroup{WP1}{1}{6} \\
+  \ganttgroup{Deliverable 1.1}{4}{4} \\
+  \ganttgroup{Deliverable 1.2}{6}{6} \\
+  \ganttgroup{WP2}{1}{12} \\
+  \ganttgroup{Deliverable 2.1}{10}{10} \\
+  \ganttgroup{Deliverable 2.2}{12}{12} \\
+  \ganttgroup{Conference}{11}{11} \\
+  \ganttgroup{WP3}{7}{24} \\
+  \ganttgroup{Deliverable 3.1}{22}{22} \\
+  \ganttgroup{WP4}{13}{24} \\
+  \ganttgroup{Visit to Lille}{14}{14} \\
+  \ganttgroup{Deliverable 4.1}{17}{17} \\
+  \ganttgroup{Deliverable 2.2}{24}{24} \\
+  \ganttgroup{Conference}{16}{16}\\
+  \ganttgroup{Conference}{23}{23} \\
+  \ganttgroup{Public engagement}{1}{24} \\
+  \ganttgroup{Industry engagement}{1}{24}
 \end{ganttchart}
 
 \end{center}
@@ -375,7 +397,7 @@ The active contribution of the beneficiary to the research and training activiti
 NB: Each participant is described in Section 5. This specific information should not be repeated here.
 }
 
-The Department of Mathematics and Statistics at Lancaster University was ranked fifth equal in the United Kingdom in the most recent Research Excellence Framework assessment.  The Department has a thriving research environment, with 50 faculty, 11 post-doctoral fellows, and 72 PhD students.  The Department has numerous government- and industry-funded research projects, many of which relate to industrially-motivated statistics and operations research and are related to the currently-proposed project.  The skill set of the Researcher complements that of the Beneficiary by providing expertise in current algorithmic approaches to bandit algorithms and reinforcement learning.  The host institution in return provides expertise in statistical methodology appropriate to online inference, and game theoretical learning, and a strong track-record of working with industry to ensure the fundamental research is relevant and generates impact.
+The Department of Mathematics and Statistics at Lancaster University was ranked fifth equal in the United Kingdom in the most recent Research Excellence Framework assessment.  The Department has a thriving research environment, with 50 faculty, 11 post-doctoral fellows, and 72 PhD students.  The Department has numerous government- and industry-funded research projects, many of which relate to industrially-motivated statistics and operations research and are related to the currently-proposed project.  The skill set of the Researcher complements that of the Beneficiary by providing expertise in current algorithmic approaches to bandit algorithms and reinforcement learning.  The host institution in return provides expertise in statistical methodology appropriate to online inference, and game theoretical learning, and a strong track-record of working with industry to ensure the fundamental research is relevant and generates impact.  In addition the Researcher will develop links with Security Lancaster (www.lancaster.ac.uk/security-lancaster/), in which researchers are currently addressing the security of supply chains using game-theoretical approaches, to both develop test cases for the current research project and build links with their network of industry and government collaborators.
 
 \newpage
 \section{CV of the Experienced Researcher}
