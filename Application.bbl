@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.5 $
+% $ biblatex version 2.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -98,41 +98,6 @@
   \field{year}{2009}
 \endentry
 
-\entry{Auer03NS}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Auer}{A.}%
-     {Peter}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Cesa-Bianchi}{C.-B.}%
-     {Nicol\'o}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Freund}{F.}%
-     {Yoav}{Y.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Schapire}{S.}%
-     {Robert}{R.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AP+1}
-  \strng{fullhash}{APCBNFYSR1}
-  \field{sortinit}{A}
-  \field{number}{1}
-  \field{pages}{48\bibrangedash 77}
-  \field{title}{{The Nonstochastic Multiarmed Bandit Problem}}
-  \field{volume}{32}
-  \field{journaltitle}{SIAM Journal on Computing}
-  \field{month}{01}
-  \field{year}{2003}
-\endentry
-
 \entry{Balcan15CR}{article}{}
   \name{author}{4}{}{%
     {{}%
@@ -165,6 +130,33 @@
   \field{title}{Commitment without regrets: Online learning in Stackelberg
   security games}
   \field{year}{2015}
+\endentry
+
+\entry{blum2014learning}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Blum}{B.}%
+     {Avrim}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Haghtalab}{H.}%
+     {Nika}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Procaccia}{P.}%
+     {Ariel~D}{A.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BAHNPAD1}
+  \strng{fullhash}{BAHNPAD1}
+  \field{sortinit}{B}
+  \field{booktitle}{Advances in Neural Information Processing Systems}
+  \field{pages}{1826\bibrangedash 1834}
+  \field{title}{Learning optimal commitment to overcome insecurity}
+  \field{year}{2014}
 \endentry
 
 \entry{Bubeck09PE}{inproceedings}{}
@@ -343,6 +335,64 @@
   \field{year}{2011}
 \endentry
 
+\entry{gabillon2013adaptive}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Gabillon}{G.}%
+     {Victor}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kveton}{K.}%
+     {Branislav}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wen}{W.}%
+     {Zheng}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Eriksson}{E.}%
+     {Brian}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Muthukrishnan}{M.}%
+     {S}{S}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GV+2}
+  \strng{fullhash}{GVKBWZEBMS1}
+  \field{sortinit}{G}
+  \field{booktitle}{Advances in Neural Information Processing Systems}
+  \field{pages}{2697\bibrangedash 2705}
+  \field{title}{Adaptive submodular maximization in bandit setting}
+  \field{year}{2013}
+\endentry
+
+\entry{goldberg2014query}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Goldberg}{G.}%
+     {Paul~W}{P.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Turchetta}{T.}%
+     {Stefano}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GPWTS1}
+  \strng{fullhash}{GPWTS1}
+  \field{sortinit}{G}
+  \field{title}{Query Complexity of Approximate Equilibria in Anonymous Games}
+  \field{journaltitle}{arXiv preprint arXiv:1412.6455}
+  \field{year}{2014}
+\endentry
+
 \entry{granick2005faking}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -490,6 +540,66 @@
   \field{year}{2011}
 \endentry
 
+\entry{krause2011randomized}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Krause}{K.}%
+     {Andreas}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Roper}{R.}%
+     {Alex}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Golovin}{G.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KARAGD1}
+  \strng{fullhash}{KARAGD1}
+  \field{sortinit}{K}
+  \field{booktitle}{IJCAI Proceedings-International Joint Conference on
+  Artificial Intelligence}
+  \field{number}{3}
+  \field{pages}{2133}
+  \field{title}{Randomized sensing in adversarial environments}
+  \field{volume}{22}
+  \field{year}{2011}
+\endentry
+
+\entry{letchford2009learning}{incollection}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Letchford}{L.}%
+     {Joshua}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Conitzer}{C.}%
+     {Vincent}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Munagala}{M.}%
+     {Kamesh}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{LJCVMK1}
+  \strng{fullhash}{LJCVMK1}
+  \field{sortinit}{L}
+  \field{booktitle}{Algorithmic Game Theory}
+  \field{pages}{250\bibrangedash 262}
+  \field{title}{Learning and approximating the optimal strategy to commit to}
+  \field{year}{2009}
+\endentry
+
 \entry{Marecki12PR}{inproceedings}{}
   \name{author}{3}{}{%
     {{}%
@@ -550,6 +660,22 @@
   \field{title}{{Hoeffding races: Accelerating model selection search for
   classification and function approximation}}
   \field{year}{1993}
+\endentry
+
+\entry{munos2014bandits}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Munos}{M.}%
+     {R{\'e}mi}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MR1}
+  \strng{fullhash}{MR1}
+  \field{sortinit}{M}
+  \field{title}{From bandits to Monte-Carlo Tree Search: The optimistic
+  principle applied to optimization and planning}
+  \field{year}{2014}
 \endentry
 
 \entry{Nguyen14RO}{inproceedings}{}
@@ -689,6 +815,27 @@
   \field{pages}{733\bibrangedash 740}
   \field{title}{Online planning for optimal protector strategies in resource
   conservation games}
+  \field{year}{2014}
+\endentry
+
+\entry{russo2014information}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Russo}{R.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Van~Roy}{V.~R.}%
+     {Benjamin}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RDVRB1}
+  \strng{fullhash}{RDVRB1}
+  \field{sortinit}{R}
+  \field{title}{An information-theoretic analysis of thompson sampling}
+  \field{journaltitle}{arXiv preprint arXiv:1403.5341}
   \field{year}{2014}
 \endentry
 
@@ -840,29 +987,6 @@
   \field{volume}{7}
   \field{journaltitle}{J. on Telecomm. \& High Tech. L.}
   \field{year}{2009}
-\endentry
-
-\entry{tambe2012game}{inproceedings}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Tambe}{T.}%
-     {Milind}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {An}{A.}%
-     {Bo}{B.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{TMAB1}
-  \strng{fullhash}{TMAB1}
-  \field{sortinit}{T}
-  \field{booktitle}{AAAI Spring Symposium: Game Theory for Security,
-  Sustainability, and Health}
-  \field{title}{Game Theory for Security: A Real-World Challenge Problem for
-  Multiagent Systems and Beyond.}
-  \field{year}{2012}
 \endentry
 
 \entry{tsai2009iris}{article}{}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.17)  2 SEP 2015 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.17)  2 SEP 2015 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1333,9 +1333,6 @@ Package biblatex Warning: Data encoding is 'utf8'.
 \openout4 = `Application-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-Package biblatex Warning: File 'Application.bbl' created by wrong version.
-
 Package biblatex Info: ... file 'Application.bbl' found.
 (./Application.bbl
 
@@ -1478,38 +1475,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5.62097> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <4.015> on input line 7.
-[4] [5]
-
-LaTeX Warning: Citation 'blum2014learning' on page 6 undefined on input line 91
-.
-
-
-LaTeX Warning: Citation 'letchford2009learning' on page 6 undefined on input li
-ne 91.
-
-
-LaTeX Warning: Citation 'munos2014bandits' on page 6 undefined on input line 93
-.
-
-[6]
-
-LaTeX Warning: Citation 'krause2011randomized' on page 7 undefined on input lin
-e 126.
-
-
-LaTeX Warning: Citation 'gabillon2013adaptive' on page 7 undefined on input lin
-e 127.
-
-
-LaTeX Warning: Citation 'goldberg2014query' on page 7 undefined on input line 1
-46.
-
-[7]
-
-LaTeX Warning: Citation 'russo2014information' on page 8 undefined on input lin
-e 179.
-
-[8] [9]) [10]
+[4] [5] [6] [7] [8] [9]) [10]
 
 LaTeX Warning: Citation 'MayEtAl2012' on page 11 undefined on input line 228.
 
@@ -1657,10 +1623,10 @@ Package logreq Info: Writing requests to 'Application.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26781 strings out of 493117
- 492268 string characters out of 6135433
- 774634 words of memory out of 5000000
- 29618 multiletter control sequences out of 15000+600000
+ 26800 strings out of 493117
+ 492730 string characters out of 6135433
+ 775634 words of memory out of 5000000
+ 29630 multiletter control sequences out of 15000+600000
  116180 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,73p,1906b,1481s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1687,10 +1653,10 @@ b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/loc
 al/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Application.pdf (24 pages, 495762 bytes).
+Output written on Application.pdf (24 pages, 495530 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 360 compressed objects within 4 object streams
+ 118 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

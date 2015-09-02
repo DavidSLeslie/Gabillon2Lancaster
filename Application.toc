@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Overall coherence and effectiveness of the work plan, including appropriateness of the allocation of tasks and resources}{14}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Work packages}{14}{paragraph*.3}
+\contentsline {paragraph}{Work packages}{15}{paragraph*.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Major milestones}{15}{paragraph*.4}
 \defcounter {refsection}{0}\relax 
