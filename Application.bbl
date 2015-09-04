@@ -71,31 +71,32 @@
   \field{year}{2010}
 \endentry
 
-\entry{auer2009near}{inproceedings}{}
+\entry{Auer02FA}{article}{}
   \name{author}{3}{}{%
     {{}%
      {Auer}{A.}%
-     {Peter}{P.}%
+     {P.}{P.}%
      {}{}%
      {}{}}%
     {{}%
-     {Jaksch}{J.}%
-     {Thomas}{T.}%
+     {Cesa-Bianchi}{C.-B.}%
+     {N.}{N.}%
      {}{}%
      {}{}}%
     {{}%
-     {Ortner}{O.}%
-     {Ronald}{R.}%
+     {Fischer}{F.}%
+     {P.}{P.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{APJTOR1}
-  \strng{fullhash}{APJTOR1}
+  \strng{namehash}{APCBNFP1}
+  \strng{fullhash}{APCBNFP1}
   \field{sortinit}{A}
-  \field{booktitle}{Advances in neural information processing systems}
-  \field{pages}{89\bibrangedash 96}
-  \field{title}{Near-optimal regret bounds for reinforcement learning}
-  \field{year}{2009}
+  \field{pages}{235\bibrangedash 256}
+  \field{title}{Finite-Time Analysis of the Multi-Armed Bandit Problem}
+  \field{volume}{47}
+  \field{journaltitle}{Machine Learning}
+  \field{year}{2002}
 \endentry
 
 \entry{Balcan15CR}{article}{}
@@ -234,6 +235,74 @@
   \field{volume}{78}
   \field{journaltitle}{Journal of Computer and System Sciences}
   \field{year}{2012}
+\endentry
+
+\entry{ChapmanEtAl2013}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Chapman}{C.}%
+     {Archie~C.}{A.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leslie}{L.}%
+     {David~S.}{D.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rogers}{R.}%
+     {Alex}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jennings}{J.}%
+     {Nicholas~R.}{N.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \list{publisher}{2}{%
+    {Society for Industrial}%
+    {Applied Mathematics}%
+  }
+  \keyw{68T05,68W15,91A10,distributed optimization,potential
+  games,reinforcement learning,strong ergodicity}
+  \strng{namehash}{CAC+1}
+  \strng{fullhash}{CACLDSRAJNR1}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  In this paper, we address the problem of convergence to Nash equilibria in
+  games with rewards that are initially unknown and must be estimated over time
+  from noisy observations. These games arise in many real-world applications,
+  whenever rewards for actions cannot be prespecified and must be learned
+  online, but standard results in game theory do not consider such settings.
+  For this problem, we derive a multiagent version of \$\backslash
+  mathcal\{Q\}\$-learning to estimate the reward functions using novel forms of
+  the \$\backslash epsilon\$-greedy learning policy. Using these \$\backslash
+  mathcal\{Q\}\$-learning schemes to estimate reward functions, we then provide
+  conditions guaranteeing the convergence of adaptive play and the better-reply
+  processes to Nash equilibria in potential games and games with more general
+  forms of acyclicity, and of regret matching to the set of correlated
+  equilibria in generic games. A secondary result is that we prove the strong
+  ergoditicity of stochastic adaptive play and stochastic better-reply
+  processes in the ca...%
+  }
+  \verb{doi}
+  \verb 10.1137/120893501
+  \endverb
+  \field{issn}{0363-0129}
+  \field{number}{4}
+  \field{pages}{3154\bibrangedash 3180}
+  \field{title}{{Convergent Learning Algorithms for Unknown Reward Games}}
+  \verb{url}
+  \verb http://epubs.siam.org/doi/abs/10.1137/120893501
+  \endverb
+  \field{volume}{51}
+  \field{journaltitle}{SIAM Journal on Control and Optimization}
+  \field{month}{01}
+  \field{year}{2013}
 \endentry
 
 \entry{chen2014combinatorial}{inproceedings}{}
@@ -570,6 +639,154 @@
   \field{year}{2011}
 \endentry
 
+\entry{LarsenEtAl2010}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Larsen}{L.}%
+     {Tobias}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leslie}{L.}%
+     {David~S}{D.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Collins}{C.}%
+     {Edmund~J}{E.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bogacz}{B.}%
+     {Rafal}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LT+1}
+  \strng{fullhash}{LTLDSCEJBR1}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  Reinforcement learning models generally assume that a stimulus is presented
+  that allows a learner to unambiguously identify the state of nature, and the
+  reward received is drawn from a distribution that depends on that state.
+  However, in any natural environment, the stimulus is noisy. When there is
+  state uncertainty, it is no longer immediately obvious how to perform
+  reinforcement learning, since the observed reward cannot be unambiguously
+  allocated to a state of the environment. This letter addresses the problem of
+  incorporating state uncertainty in reinforcement learning models. We show
+  that simply ignoring the uncertainty and allocating the reward to the most
+  likely state of the environment results in incorrect value estimates.
+  Furthermore, using only the information that is available before observing
+  the reward also results in incorrect estimates. We therefore introduce a new
+  technique, posterior weighted reinforcement learning, in which the estimates
+  of state probabilities are updated according to the observed rewards (e.g.,
+  if a learner observes a reward usually associated with a particular state,
+  this state becomes more likely). We show analytically that this modified
+  algorithm can converge to correct reward estimates and confirm this with
+  numerical experiments.The algorithm is shown to be a variant of the
+  expectation-maximization algorithm, allowing rigorous convergence analyses to
+  be carried out. A possible neural implementation of the algorithm in the
+  cortico-basal-ganglia-thalamic network is presented, and experimental
+  predictions of our model are discussed.%
+  }
+  \field{pages}{1149\bibrangedash 1179}
+  \field{title}{{Posterior Weighted Reinforcement Learning with State
+  Uncertainty}}
+  \field{volume}{22}
+  \verb{file}
+  \verb :Users/leslied/Library/Application Support/Mendeley Desktop/Downloaded/
+  \verb Larsen et al. - 2010 - Posterior Weighted Reinforcement Learning with S
+  \verb tate Uncertainty.pdf:pdf
+  \endverb
+  \field{journaltitle}{Neural Computation}
+  \field{year}{2010}
+\endentry
+
+\entry{LeslieCollins03}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Leslie}{L.}%
+     {David~S}{D.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Collins}{C.}%
+     {E~J}{E.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LDSCEJ1}
+  \strng{fullhash}{LDSCEJ1}
+  \field{sortinit}{L}
+  \field{number}{4}
+  \field{pages}{1231\bibrangedash 1251}
+  \field{title}{{Convergent Multiple-timescales Reinforcement Learning
+  Algorithms in Normal Form Games}}
+  \field{volume}{13}
+  \field{journaltitle}{Annals of Applied Probability}
+  \field{year}{2003}
+\endentry
+
+\entry{LeslieCollins05}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Leslie}{L.}%
+     {David~S}{D.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Collins}{C.}%
+     {E~J}{E.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LDSCEJ1}
+  \strng{fullhash}{LDSCEJ1}
+  \field{sortinit}{L}
+  \field{pages}{495\bibrangedash 514}
+  \field{title}{{Individual Q-learning in normal form games}}
+  \field{volume}{44}
+  \field{journaltitle}{SIAM Journal on Control and Optimization}
+  \field{year}{2005}
+\endentry
+
+\entry{LeslieCollins06}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Leslie}{L.}%
+     {David~S.}{D.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Collins}{C.}%
+     {E.J.}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{actor,best response differential inclusion,critic process,fictitious
+  play,stochastic approximation}
+  \strng{namehash}{LDSCE1}
+  \strng{fullhash}{LDSCE1}
+  \field{sortinit}{L}
+  \verb{doi}
+  \verb 10.1016/j.geb.2005.08.005
+  \endverb
+  \field{issn}{08998256}
+  \field{number}{2}
+  \field{pages}{285\bibrangedash 298}
+  \field{title}{{Generalised weakened fictitious play}}
+  \verb{url}
+  \verb http://linkinghub.elsevier.com/retrieve/pii/S089982560500103X
+  \endverb
+  \field{volume}{56}
+  \verb{file}
+  \verb :Users/leslied/Library/Application Support/Mendeley Desktop/Downloaded/
+  \verb Leslie, Collins - 2006 - Generalised weakened fictitious play.pdf:pdf
+  \endverb
+  \field{journaltitle}{Games and Economic Behavior}
+  \field{year}{2006}
+\endentry
+
 \entry{letchford2009learning}{incollection}{}
   \name{author}{3}{}{%
     {{}%
@@ -662,20 +879,45 @@
   \field{year}{1993}
 \endentry
 
-\entry{munos2014bandits}{article}{}
-  \name{author}{1}{}{%
+\entry{MayEtAl2012}{article}{}
+  \name{author}{4}{}{%
     {{}%
-     {Munos}{M.}%
-     {R{\'e}mi}{R.}%
+     {May}{M.}%
+     {BC}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Korda}{K.}%
+     {N}{N}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lee}{L.}%
+     {A}{A}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leslie}{L.}%
+     {DS}{D.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{MR1}
-  \strng{fullhash}{MR1}
+  \strng{namehash}{MB+1}
+  \strng{fullhash}{MBKNLALD1}
   \field{sortinit}{M}
-  \field{title}{From bandits to Monte-Carlo Tree Search: The optimistic
-  principle applied to optimization and planning}
-  \field{year}{2014}
+  \field{pages}{2069\bibrangedash 2106}
+  \field{title}{{Optimistic Bayesian sampling in contextual-bandit problems}}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2343711
+  \endverb
+  \field{volume}{13}
+  \verb{file}
+  \verb :Users/leslied/Library/Application Support/Mendeley Desktop/Downloaded/
+  \verb May et al. - 2012 - Optimistic Bayesian sampling in contextual-bandit p
+  \verb roblems.pdf:pdf
+  \endverb
+  \field{journaltitle}{The Journal of Machine Learning Research}
+  \field{year}{2012}
 \endentry
 
 \entry{Nguyen14RO}{inproceedings}{}
@@ -714,6 +956,90 @@
   \field{pages}{756\bibrangedash 762}
   \field{title}{Regret-based optimization and preference elicitation for
   stackelberg security games with uncertainty}
+  \field{year}{2014}
+\endentry
+
+\entry{PerkinsLeslie2012}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Perkins}{P.}%
+     {Steven}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leslie}{L.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \list{publisher}{1}{%
+    {INFORMS Applied Probability Society}%
+  }
+  \keyw{Asynchronous stochastic approximation,differential
+  inclusion,two-timescales.}
+  \strng{namehash}{PSLD1}
+  \strng{fullhash}{PSLD1}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  The asymptotic pseudo-trajectory approach to stochastic approximation of
+  Bena\"{\i}m, Hofbauer and Sorin is extended for asynchronous stochastic
+  approximations with a set-valued mean field. The asynchronicity of the
+  process is incorporated into the mean field to produce convergence results
+  which remain similar to those of an equivalent synchronous process. In
+  addition, this allows many of the restrictive assumptions previously
+  associated with asynchronous stochastic approximation to be removed. The
+  framework is extended for a coupled asynchronous stochastic approximation
+  process with set-valued mean fields. Two-timescales arguments are used here
+  in a similar manner to the original work in this area by Borkar. The
+  applicability of this approach is demonstrated through learning in a Markov
+  decision process.%
+  }
+  \verb{doi}
+  \verb 10.1214/11-SSY056.
+  \endverb
+  \field{pages}{409\bibrangedash 446}
+  \field{title}{{Asynchronous stochastic approximation with differential
+  inclusions}}
+  \verb{url}
+  \verb http://www.i-journals.org/ssy/viewarticle.php?id=56
+  \endverb
+  \field{volume}{2}
+  \field{journaltitle}{Stochastic Systems}
+  \field{year}{2012}
+\endentry
+
+\entry{PerkinsLeslie2014}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Perkins}{P.}%
+     {Steven}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leslie}{L.}%
+     {David~S.}{D.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PSLDS1}
+  \strng{fullhash}{PSLDS1}
+  \field{sortinit}{P}
+  \verb{doi}
+  \verb 10.1016/j.jet.2014.04.008
+  \endverb
+  \field{pages}{179\bibrangedash 213}
+  \field{title}{{Stochastic Fictitious Play with Continuous Action Sets}}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/journal/00220531
+  \endverb
+  \field{volume}{152}
+  \verb{file}
+  \verb :Users/leslied/Downloads/1-s2.0-S0022053114000623-main.pdf:pdf
+  \endverb
+  \field{journaltitle}{Journal of Economic Theory}
   \field{year}{2014}
 \endentry
 
@@ -889,24 +1215,6 @@
   \field{pages}{3275\bibrangedash 3283}
   \field{title}{Risk-Aversion in Multi-armed Bandits}
   \field{year}{2012}
-\endentry
-
-\entry{scherrerapproximate}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Scherrer}{S.}%
-     {Bruno}{B.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{SB1}
-  \strng{fullhash}{SB1}
-  \field{sortinit}{S}
-  \field{booktitle}{Proceedings of the Thirty Second International Conference
-  on Machine Learning}
-  \field{title}{Approximate Dynamic Programming for Two-Player Zero-Sum Markov
-  Games}
-  \field{year}{2015}
 \endentry
 
 \entry{shieh2012protect}{inproceedings}{}
