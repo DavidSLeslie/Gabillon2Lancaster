@@ -21,7 +21,7 @@
 \usepackage{csquotes}
 \usepackage{pgfgantt}
 \usepackage{titlesec}
-\usepackage[style=verbose-ibid,backend=bibtex]{biblatex}
+\usepackage[style=verbose-ibid,backend=bibtex,firstinits=true]{biblatex}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -40,6 +40,10 @@
 \let\oldfootnotesize\footnotesize
 \renewcommand{\footnotesize}{\fontsize{8bp}{1em}\selectfont}
 \renewcommand{\cite}{\autocite} % citations in footnotes
+
+%\usepackage[round,comma]{templates/natbib}
+
+%\bibliographystyle{abbrvnat}
 \bibliography{biblio}
 
 \headheight=14pt
