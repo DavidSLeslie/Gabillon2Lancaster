@@ -8,42 +8,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1}Quality, innovative aspects and credibility of the research}{4}{subsection.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Security meets Game Theory }{4}{paragraph*.1}
+\contentsline {subsection}{\numberline {1.2}Clarity and quality of transfer of knowledge/training for the development of the researcher in light of the research objectives}{8}{subsection.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Uncertainty in Security Games}{5}{paragraph*.2}
+\contentsline {subsection}{\numberline {1.3}Quality of the supervision and the hosting arrangements}{9}{subsection.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Bandit problems}{5}{paragraph*.3}
+\contentsline {subsection}{\numberline {1.4}Capacity of the researcher to reach and re-enforce a position of professional maturity in research}{10}{subsection.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Existing results}{6}{paragraph*.4}
+\contentsline {section}{\numberline {2}Impact}{10}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vision}{6}{paragraph*.5}
+\contentsline {subsection}{\numberline {2.1}Enhancing research- and innovation-related skills and working conditions to realise the potential of individuals and to provide new career perspectives}{10}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Clarity and quality of transfer of knowledge/training for the development of the researcher in light of the research objectives}{9}{subsection.1.2}
+\contentsline {subsection}{\numberline {2.2}Effectiveness of the proposed measures for communication and results dissemination}{11}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Quality of the supervision and the hosting arrangements}{10}{subsection.1.3}
+\contentsline {section}{\numberline {3}Implementation}{11}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Capacity of the researcher to reach and re-enforce a position of professional maturity in research}{11}{subsection.1.4}
+\contentsline {subsection}{\numberline {3.1}Overall coherence and effectiveness of the work plan, including appropriateness of the allocation of tasks and resources}{11}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Impact}{12}{section.2}
+\contentsline {paragraph}{Work packages}{11}{paragraph*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Enhancing research- and innovation-related skills and working conditions to realise the potential of individuals and to provide new career perspectives}{12}{subsection.2.1}
+\contentsline {paragraph}{Major milestones}{12}{paragraph*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Effectiveness of the proposed measures for communication and results dissemination}{12}{subsection.2.2}
+\contentsline {subsection}{\numberline {3.2}Appropriateness of the management structure and procedures, including quality management and risk management}{12}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Implementation}{13}{section.3}
+\contentsline {subsection}{\numberline {3.3}Appropriateness of the institutional environment (infrastructure)}{12}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Overall coherence and effectiveness of the work plan, including appropriateness of the allocation of tasks and resources}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.4}Competences, experience and complementarity of the participating organisations and institutional commitment}{12}{subsection.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Work packages}{13}{paragraph*.6}
+\contentsline {section}{\numberline {4}CV of the Experienced Researcher}{15}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Major milestones}{13}{paragraph*.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Appropriateness of the management structure and procedures, including quality management and risk management}{13}{subsection.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Appropriateness of the institutional environment (infrastructure)}{14}{subsection.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Competences, experience and complementarity of the participating organisations and institutional commitment}{14}{subsection.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}CV of the Experienced Researcher}{16}{section.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Capacities of the Participating Organisations}{21}{section.5}
+\contentsline {section}{\numberline {5}Capacities of the Participating Organisations}{20}{section.5}
