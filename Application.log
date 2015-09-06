@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.16)  6 SEP 2015 18:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.16)  6 SEP 2015 20:03
 entering extended mode
 **C:/Users/Madsl/Documents/GitHub/Gabillon2Lancaster/Application.tex
 (C:/Users/Madsl/Documents/GitHub/Gabillon2Lancaster/Application.tex
@@ -1460,7 +1460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--127
 
 [6] [7]) [8] [9]
 (C:\Users\Madsl\Documents\GitHub\Gabillon2Lancaster\Capacity.tex) [10] [11]
-[12] [13] [14]
+[12] [13]
 (C:\Users\Madsl\Documents\GitHub\Gabillon2Lancaster\cvofresearcher.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--29
 
@@ -1471,7 +1471,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--44
 
  []
 
-[15]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 45--54
 
  []
@@ -1496,7 +1496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--85
 
  []
 
-[16]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 86--125
 
  []
@@ -1518,7 +1518,7 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 135.
- [17]) [18]
+ [16]) [17]
 LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 432
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1532,13 +1532,13 @@ Overfull \hbox (1.10883pt too wide) in paragraph at lines 432--494
 []  
  []
 
-[19]
+[18]
 Overfull \vbox (11.61205pt too high) has occurred while \output is active []
 
 
-[20] 
+[19] 
 AED: lastpage setting LastPage
-[21]
+[20]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 550.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
  (C:\Users\Madsl\Documents\GitHub\Gabillon2Lancaster\Application.aux)
@@ -1549,10 +1549,10 @@ Package rerunfilecheck Info: File `Application.out' has not changed.
 Package logreq Info: Writing requests to 'Application.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 26395 strings out of 493921
- 487371 string characters out of 3144876
- 777913 words of memory out of 3000000
- 29076 multiletter control sequences out of 15000+200000
+ 26391 strings out of 493921
+ 487308 string characters out of 3144876
+ 776913 words of memory out of 3000000
+ 29075 multiletter control sequences out of 15000+200000
  110397 words of font info for 89 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,13n,72p,2225b,1481s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1577,9 +1577,9 @@ fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Application.pdf (21 pages, 505371 bytes).
+Output written on Application.pdf (20 pages, 503314 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -18,7 +18,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Enhancing research- and innovation-related skills and working conditions to realise the potential of individuals and to provide new career perspectives}{10}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Effectiveness of the proposed measures for communication and results dissemination}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Effectiveness of the proposed measures for communication and results dissemination}{10}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Implementation}{11}{section.3}
 \defcounter {refsection}{0}\relax 
@@ -26,7 +26,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Work packages}{11}{paragraph*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Major milestones}{12}{paragraph*.2}
+\contentsline {paragraph}{Major milestones}{11}{paragraph*.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Appropriateness of the management structure and procedures, including quality management and risk management}{12}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
@@ -34,6 +34,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Competences, experience and complementarity of the participating organisations and institutional commitment}{12}{subsection.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}CV of the Experienced Researcher}{15}{section.4}
+\contentsline {section}{\numberline {4}CV of the Experienced Researcher}{14}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Capacities of the Participating Organisations}{20}{section.5}
+\contentsline {section}{\numberline {5}Capacities of the Participating Organisations}{19}{section.5}
