@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.3 $
+% $ biblatex version 2.5 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -64,8 +64,7 @@
   \strng{namehash}{AJYBSMR1}
   \strng{fullhash}{AJYBSMR1}
   \field{sortinit}{A}
-  \field{booktitle}{Proceedings of the Twenty-Third Conference on Learning
-  Theory}
+  \field{booktitle}{Conference on Learning Theory}
   \field{pages}{41\bibrangedash 53}
   \field{title}{{Best Arm Identification in Multi-Armed Bandits}}
   \field{year}{2010}
@@ -74,32 +73,31 @@
 \entry{Auer02FA}{article}{}
   \name{author}{3}{}{%
     {{}%
-     {Auer}{A.}%
-     {P.}{P.}%
+     {Auer\!}{A.}%
+     {\!P.}{P.}%
      {}{}%
      {}{}}%
     {{}%
-     {Cesa-Bianchi}{C.-B.}%
-     {N.}{N.}%
+     {Cesa-Bianchi\!}{C.-B.}%
+     {\!N.}{N.}%
      {}{}%
      {}{}}%
     {{}%
-     {Fischer}{F.}%
-     {P.}{P.}%
+     {Fischer\!}{F.}%
+     {\!P.}{P.}%
      {}{}%
      {}{}}%
   }
   \strng{namehash}{APCBNFP1}
   \strng{fullhash}{APCBNFP1}
   \field{sortinit}{A}
-  \field{pages}{235\bibrangedash 256}
-  \field{title}{Finite-Time Analysis of the Multi-Armed Bandit Problem}
-  \field{volume}{47}
-  \field{journaltitle}{Machine Learning}
+  \field{title}{\!Finite-Time\! Analysis\! of\! the\! Multi-Armed\! Bandit\!
+  Problem\!}
+  \field{journaltitle}{\!Machine Learning\!}
   \field{year}{2002}
 \endentry
 
-\entry{Balcan15CR}{article}{}
+\entry{Balcan15CR}{inproceedings}{}
   \name{author}{4}{}{%
     {{}%
      {Balcan}{B.}%
@@ -122,12 +120,11 @@
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {ACM}%
-  }
   \strng{namehash}{BMF+1}
   \strng{fullhash}{BMFBAHNPAD1}
   \field{sortinit}{B}
+  \field{booktitle}{Proceedings of the Sixteenth ACM Conference on Economics
+  and Computation}
   \field{title}{Commitment without regrets: Online learning in Stackelberg
   security games}
   \field{year}{2015}
@@ -158,34 +155,6 @@
   \field{pages}{1826\bibrangedash 1834}
   \field{title}{Learning optimal commitment to overcome insecurity}
   \field{year}{2014}
-\endentry
-
-\entry{Bubeck09PE}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Bubeck}{B.}%
-     {S.}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Munos}{M.}%
-     {R.}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Stoltz}{S.}%
-     {G.}{G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BSMRSG1}
-  \strng{fullhash}{BSMRSG1}
-  \field{sortinit}{B}
-  \field{booktitle}{Proceedings of the Twentieth International Conference on
-  Algorithmic Learning Theory}
-  \field{pages}{23\bibrangedash 37}
-  \field{title}{{Pure Exploration in Multi-Armed Bandit Problems}}
-  \field{year}{2009}
 \endentry
 
 \entry{bubeck2012regret}{article}{}
@@ -289,16 +258,9 @@
   ergoditicity of stochastic adaptive play and stochastic better-reply
   processes in the ca...%
   }
-  \verb{doi}
-  \verb 10.1137/120893501
-  \endverb
-  \field{issn}{0363-0129}
   \field{number}{4}
   \field{pages}{3154\bibrangedash 3180}
   \field{title}{{Convergent Learning Algorithms for Unknown Reward Games}}
-  \verb{url}
-  \verb http://epubs.siam.org/doi/abs/10.1137/120893501
-  \endverb
   \field{volume}{51}
   \field{journaltitle}{SIAM Journal on Control and Optimization}
   \field{month}{01}
@@ -336,78 +298,17 @@
   \strng{namehash}{CS+1}
   \strng{fullhash}{CSLTKILMRCW1}
   \field{sortinit}{C}
-  \field{booktitle}{Advances in Neural Information Processing Systems}
-  \field{pages}{379\bibrangedash 387}
-  \field{title}{Combinatorial pure exploration of multi-armed bandits}
-  \field{year}{2014}
-\endentry
-
-\entry{Even-Dar06AE}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Even-Dar}{E.-D.}%
-     {E.}{E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Mannor}{M.}%
-     {S.}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Mansour}{M.}%
-     {Y.}{Y.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{EDEMSMY1}
-  \strng{fullhash}{EDEMSMY1}
-  \field{sortinit}{E}
-  \field{pages}{1079\bibrangedash 1105}
-  \field{title}{Action Elimination and Stopping Conditions for the Multi-Armed
-  Bandit and Reinforcement Learning Problems}
-  \field{volume}{7}
-  \field{journaltitle}{Journal of Machine Learning Research}
-  \field{year}{2006}
-\endentry
-
-\entry{Gabillon11MB}{inproceedings}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Gabillon}{G.}%
-     {V.}{V.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ghavamzadeh}{G.}%
-     {M.}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Lazaric}{L.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Bubeck}{B.}%
-     {S.}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{GV+1}
-  \strng{fullhash}{GVGMLABS1}
-  \field{sortinit}{G}
-  \field{booktitle}{Proceedings of the Advances in Neural Information
-  Processing Systems 25}
-  \field{pages}{2222\bibrangedash 2230}
-  \field{title}{{Multi-Bandit Best Arm Identification}}
-  \field{year}{2011}
+  \field{booktitle}{\!Neural\! Information\! Processing\! Systems\!}
+  \field{pages}{\!379\bibrangedash 387\!}
+  \field{title}{\!Combinatorial\! pure\! exploration\! of\! multi-armed\!
+  bandits\!}
+  \field{year}{\!2014\!}
 \endentry
 
 \entry{gabillon2013adaptive}{inproceedings}{}
   \name{author}{5}{}{%
     {{}%
-     {Gabillon}{G.}%
+     {\!Gabillon\!}{G.}%
      {Victor}{V.}%
      {}{}%
      {}{}}%
@@ -435,16 +336,49 @@
   \strng{namehash}{GV+2}
   \strng{fullhash}{GVKBWZEBMS1}
   \field{sortinit}{G}
-  \field{booktitle}{Advances in Neural Information Processing Systems}
-  \field{pages}{2697\bibrangedash 2705}
-  \field{title}{Adaptive submodular maximization in bandit setting}
-  \field{year}{2013}
+  \field{booktitle}{\!Neural Information Processing Systems\!}
+  \field{pages}{\!2697\bibrangedash 2705\!}
+  \field{title}{\!Adaptive\! Submodular\! Maximization\! in\! Bandit\!
+  Setting\!}
+  \field{year}{\!2013\!}
+\endentry
+
+\entry{Gabillon11MB}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Gabillon}{G.}%
+     {Victor}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ghavamzadeh}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lazaric}{L.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bubeck}{B.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GV+1}
+  \strng{fullhash}{GVGMLABS1}
+  \field{sortinit}{G}
+  \field{booktitle}{Neural Information Processing Systems}
+  \field{pages}{2222\bibrangedash 2230}
+  \field{title}{{Multi-Bandit Best Arm Identification}}
+  \field{year}{2011}
 \endentry
 
 \entry{goldberg2014query}{article}{}
   \name{author}{2}{}{%
     {{}%
-     {Goldberg}{G.}%
+     {\!Goldberg}{G.}%
      {Paul~W}{P.~W.}%
      {}{}%
      {}{}}%
@@ -457,9 +391,10 @@
   \strng{namehash}{GPWTS1}
   \strng{fullhash}{GPWTS1}
   \field{sortinit}{G}
-  \field{title}{Query Complexity of Approximate Equilibria in Anonymous Games}
-  \field{journaltitle}{arXiv preprint arXiv:1412.6455}
-  \field{year}{2014}
+  \field{title}{\!Query Complexity of Approximate Equilibria in Anonymous
+  Games\!}
+  \field{journaltitle}{\!arXiv:1412.6455\!}
+  \field{year}{\!2014\!}
 \endentry
 
 \entry{granick2005faking}{article}{}
@@ -516,15 +451,10 @@
      {}{}%
      {}{}}%
   }
-  \list{organization}{2}{%
-    {International Foundation for Autonomous Agents}%
-    {Multiagent Systems}%
-  }
   \strng{namehash}{JM+1}
   \strng{fullhash}{JMKDVOCVPMTM1}
   \field{sortinit}{J}
-  \field{booktitle}{The 10th International Conference on Autonomous Agents and
-  Multiagent Systems-Volume 1}
+  \field{booktitle}{Conference on Autonomous Agents and Multiagent Systems}
   \field{pages}{327\bibrangedash 334}
   \field{title}{A double oracle algorithm for zero-sum security games on
   graphs}
@@ -549,25 +479,13 @@
      {}{}%
      {}{}}%
   }
-  \list{publisher}{2}{%
-    {International Foundation for Autonomous Agents}%
-    {Multiagent Systems}%
-  }
-  \keyw{algorithms, game theory, interval uncertainty, security games}
   \strng{namehash}{KCITKV1}
   \strng{fullhash}{KCITKV1}
   \field{sortinit}{K}
-  \field{booktitle}{Proceedings of the 2013 International Conference on
-  Autonomous Agents and Multi-agent Systems}
-  \field{isbn}{978-1-4503-1993-5}
+  \field{booktitle}{Conference on Autonomous Agents and Multi-agent Systems}
   \field{pages}{231\bibrangedash 238}
-  \field{series}{AAMAS '13}
   \field{title}{Security Games with Interval Uncertainty}
-  \list{location}{1}{%
-    {St. Paul, MN, USA}%
-  }
   \field{year}{2013}
-  \warn{\item Can't use 'location' + 'address'}
 \endentry
 
 \entry{korzhyk2011stackelberg}{article}{}
@@ -605,7 +523,7 @@
   \field{title}{Stackelberg vs. Nash in Security Games: An Extended
   Investigation of Interchangeability, Equivalence, and Uniqueness.}
   \field{volume}{41}
-  \field{journaltitle}{J. Artif. Intell. Res.(JAIR)}
+  \field{journaltitle}{Journal Artificial Intelligence Reseqrch}
   \field{year}{2011}
 \endentry
 
@@ -727,29 +645,6 @@
   \field{year}{2003}
 \endentry
 
-\entry{LeslieCollins05}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Leslie}{L.}%
-     {David~S}{D.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Collins}{C.}%
-     {E~J}{E.~J.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{LDSCEJ1}
-  \strng{fullhash}{LDSCEJ1}
-  \field{sortinit}{L}
-  \field{pages}{495\bibrangedash 514}
-  \field{title}{{Individual Q-learning in normal form games}}
-  \field{volume}{44}
-  \field{journaltitle}{SIAM Journal on Control and Optimization}
-  \field{year}{2005}
-\endentry
-
 \entry{LeslieCollins06}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -768,16 +663,9 @@
   \strng{namehash}{LDSCE1}
   \strng{fullhash}{LDSCE1}
   \field{sortinit}{L}
-  \verb{doi}
-  \verb 10.1016/j.geb.2005.08.005
-  \endverb
-  \field{issn}{08998256}
   \field{number}{2}
   \field{pages}{285\bibrangedash 298}
   \field{title}{{Generalised weakened fictitious play}}
-  \verb{url}
-  \verb http://linkinghub.elsevier.com/retrieve/pii/S089982560500103X
-  \endverb
   \field{volume}{56}
   \verb{file}
   \verb :Users/leslied/Library/Application Support/Mendeley Desktop/Downloaded/
@@ -835,25 +723,13 @@
      {}{}%
      {}{}}%
   }
-  \list{publisher}{2}{%
-    {International Foundation for Autonomous Agents}%
-    {Multiagent Systems}%
-  }
-  \keyw{Monte-Carlo tree search, Stackelberg games}
   \strng{namehash}{MJTGSR1}
   \strng{fullhash}{MJTGSR1}
   \field{sortinit}{M}
-  \field{booktitle}{Proceedings of the 11th International Conference on
-  Autonomous Agents and Multiagent Systems - Volume 2}
-  \field{isbn}{0-9817381-2-5, 978-0-9817381-2-3}
+  \field{booktitle}{Conference on Autonomous Agents and Multiagent Systems}
   \field{pages}{821\bibrangedash 828}
-  \field{series}{AAMAS '12}
   \field{title}{Playing Repeated Stackelberg Games with Unknown Opponents}
-  \list{location}{1}{%
-    {Valencia, Spain}%
-  }
   \field{year}{2012}
-  \warn{\item Can't use 'location' + 'address'}
 \endentry
 
 \entry{Maron93HR}{inproceedings}{}
@@ -872,8 +748,7 @@
   \strng{namehash}{MOMA1}
   \strng{fullhash}{MOMA1}
   \field{sortinit}{M}
-  \field{booktitle}{Proceedings of the Advances in Neural Information
-  Processing Systems 7}
+  \field{booktitle}{Neural Information Processing Systems}
   \field{title}{{Hoeffding races: Accelerating model selection search for
   classification and function approximation}}
   \field{year}{1993}
@@ -882,7 +757,7 @@
 \entry{MayEtAl2012}{article}{}
   \name{author}{4}{}{%
     {{}%
-     {May}{M.}%
+     {\!May}{M.}%
      {BC}{B.}%
      {}{}%
      {}{}}%
@@ -898,26 +773,23 @@
      {}{}}%
     {{}%
      {Leslie}{L.}%
-     {DS}{D.}%
+     {DS\!}{D.}%
      {}{}%
      {}{}}%
   }
   \strng{namehash}{MB+1}
   \strng{fullhash}{MBKNLALD1}
   \field{sortinit}{M}
-  \field{pages}{2069\bibrangedash 2106}
-  \field{title}{{Optimistic Bayesian sampling in contextual-bandit problems}}
-  \verb{url}
-  \verb http://dl.acm.org/citation.cfm?id=2343711
-  \endverb
-  \field{volume}{13}
+  \field{pages}{\!2069\bibrangedash 2106\!}
+  \field{title}{{\!Optimistic\! Bayesian\! sampling\! in\! contextual-bandit\!
+  problems\!}}
   \verb{file}
   \verb :Users/leslied/Library/Application Support/Mendeley Desktop/Downloaded/
   \verb May et al. - 2012 - Optimistic Bayesian sampling in contextual-bandit p
   \verb roblems.pdf:pdf
   \endverb
-  \field{journaltitle}{The Journal of Machine Learning Research}
-  \field{year}{2012}
+  \field{journaltitle}{\!Journal\! of\! Machine\! Learning\! Research\!}
+  \field{year}{\!2012\!}
 \endentry
 
 \entry{Nguyen14RO}{inproceedings}{}
@@ -951,12 +823,43 @@
   \strng{namehash}{NTH+1}
   \strng{fullhash}{NTHYAABTMBC1}
   \field{sortinit}{N}
-  \field{booktitle}{Proceedings of the 28th AAAI Conference on Artificial
-  Intelligence (AAAI)}
+  \field{booktitle}{AAAI Conference on Artificial Intelligence}
   \field{pages}{756\bibrangedash 762}
   \field{title}{Regret-based optimization and preference elicitation for
   stackelberg security games with uncertainty}
   \field{year}{2014}
+\endentry
+
+\entry{LeslieCollins05}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Perkins}{P.}%
+     {Steven}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leslie}{L.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {en}%
+  }
+  \list{publisher}{1}{%
+    {INFORMS Applied Probability Society}%
+  }
+  \keyw{Asynchronous stochastic approximation,differential
+  inclusion,two-timescales.}
+  \strng{namehash}{PSLD1}
+  \strng{fullhash}{PSLD1}
+  \field{sortinit}{P}
+  \field{pages}{409\bibrangedash 446}
+  \field{title}{{Asynchronous stochastic approximation with differential
+  inclusions}}
+  \field{volume}{2}
+  \field{journaltitle}{Stochastic Systems}
+  \field{year}{2012}
 \endentry
 
 \entry{PerkinsLeslie2012}{article}{}
@@ -983,29 +886,9 @@
   \strng{namehash}{PSLD1}
   \strng{fullhash}{PSLD1}
   \field{sortinit}{P}
-  \field{abstract}{%
-  The asymptotic pseudo-trajectory approach to stochastic approximation of
-  Bena\"{\i}m, Hofbauer and Sorin is extended for asynchronous stochastic
-  approximations with a set-valued mean field. The asynchronicity of the
-  process is incorporated into the mean field to produce convergence results
-  which remain similar to those of an equivalent synchronous process. In
-  addition, this allows many of the restrictive assumptions previously
-  associated with asynchronous stochastic approximation to be removed. The
-  framework is extended for a coupled asynchronous stochastic approximation
-  process with set-valued mean fields. Two-timescales arguments are used here
-  in a similar manner to the original work in this area by Borkar. The
-  applicability of this approach is demonstrated through learning in a Markov
-  decision process.%
-  }
-  \verb{doi}
-  \verb 10.1214/11-SSY056.
-  \endverb
   \field{pages}{409\bibrangedash 446}
   \field{title}{{Asynchronous stochastic approximation with differential
   inclusions}}
-  \verb{url}
-  \verb http://www.i-journals.org/ssy/viewarticle.php?id=56
-  \endverb
   \field{volume}{2}
   \field{journaltitle}{Stochastic Systems}
   \field{year}{2012}
@@ -1027,18 +910,9 @@
   \strng{namehash}{PSLDS1}
   \strng{fullhash}{PSLDS1}
   \field{sortinit}{P}
-  \verb{doi}
-  \verb 10.1016/j.jet.2014.04.008
-  \endverb
   \field{pages}{179\bibrangedash 213}
-  \field{title}{{Stochastic Fictitious Play with Continuous Action Sets}}
-  \verb{url}
-  \verb http://www.sciencedirect.com/science/journal/00220531
-  \endverb
+  \field{title}{Stochastic Fictitious Play with Continuous Action Sets}
   \field{volume}{152}
-  \verb{file}
-  \verb :Users/leslied/Downloads/1-s2.0-S0022053114000623-main.pdf:pdf
-  \endverb
   \field{journaltitle}{Journal of Economic Theory}
   \field{year}{2014}
 \endentry
@@ -1091,15 +965,11 @@
      {}{}%
      {}{}}%
   }
-  \list{organization}{2}{%
-    {International Foundation for Autonomous Agents}%
-    {Multiagent Systems}%
-  }
   \strng{namehash}{PJ+1}
   \strng{fullhash}{PJJMMJOFPCTMWCPPKS1}
   \field{sortinit}{P}
-  \field{booktitle}{Proceedings of the 7th international joint conference on
-  Autonomous agents and multiagent systems: industrial track}
+  \field{booktitle}{Conference on Autonomous agents and multiagent systems:
+  industrial track}
   \field{pages}{125\bibrangedash 132}
   \field{title}{Deployed ARMOR protection: the application of a game theoretic
   model for security at the Los Angeles International Airport}
@@ -1129,15 +999,10 @@
      {}{}%
      {}{}}%
   }
-  \list{organization}{2}{%
-    {International Foundation for Autonomous Agents}%
-    {Multiagent Systems}%
-  }
   \strng{namehash}{QY+1}
   \strng{fullhash}{QYHWBJAXTM1}
   \field{sortinit}{Q}
-  \field{booktitle}{Proceedings of the 2014 international conference on
-  Autonomous agents and multi-agent systems}
+  \field{booktitle}{Conference on Autonomous agents and multi-agent systems}
   \field{pages}{733\bibrangedash 740}
   \field{title}{Online planning for optimal protector strategies in resource
   conservation games}
@@ -1183,36 +1048,10 @@
      {}{}%
      {}{}}%
   }
-  \name{editor}{4}{}{%
-    {{}%
-     {Pereira}{P.}%
-     {F.}{F.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Burges}{B.}%
-     {C.J.C.}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Bottou}{B.}%
-     {L.}{L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Weinberger}{W.}%
-     {K.Q.}{K.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Curran Associates, Inc.}%
-  }
   \strng{namehash}{SALAMR1}
   \strng{fullhash}{SALAMR1}
   \field{sortinit}{S}
-  \field{booktitle}{Advances in Neural Information Processing Systems 25}
-  \field{pages}{3275\bibrangedash 3283}
+  \field{booktitle}{Neural Information Processing Systems}
   \field{title}{Risk-Aversion in Multi-armed Bandits}
   \field{year}{2012}
 \endentry
@@ -1260,15 +1099,10 @@
      {}{}%
      {}{}}%
   }
-  \list{organization}{2}{%
-    {International Foundation for Autonomous Agents}%
-    {Multiagent Systems}%
-  }
   \strng{namehash}{SE+1}
   \strng{fullhash}{SEABYRTMBCDJMBMG1}
   \field{sortinit}{S}
-  \field{booktitle}{Proceedings of the 11th International Conference on
-  Autonomous Agents and Multiagent Systems-Volume 1}
+  \field{booktitle}{Conference on Autonomous Agents and Multiagent Systems}
   \field{pages}{13\bibrangedash 20}
   \field{title}{Protect: A deployed game theoretic system to protect the ports
   of the united states}
@@ -1297,7 +1131,7 @@
   \field{year}{2009}
 \endentry
 
-\entry{tsai2009iris}{article}{}
+\entry{tsai2009iris}{inproceedings}{}
   \name{author}{5}{}{%
     {{}%
      {Tsai}{T.}%
@@ -1328,6 +1162,7 @@
   \strng{namehash}{TJ+1}
   \strng{fullhash}{TJKCOFTMRS1}
   \field{sortinit}{T}
+  \field{booktitle}{Conference on Autonomous agents and multiagent systems}
   \field{title}{IRIS-a tool for strategic security allocation in transportation
   networks}
   \field{year}{2009}
