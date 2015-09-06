@@ -13,7 +13,7 @@ This calls for the design of appropriate resource allocation techniques which op
 
  %Clearly, an important feature of these methods must be to provide highly unpredictable strategies, while devising appropriate target priorities in the presence of uncertainty about the adversaries' interests.  
 
-Security resource allocation and scheduling problems comprise one of many application areas recently been shown to benefit from game-theoretic approaches. As a solid mathematical framework to model strategic decision making, game theory has proved useful in  diverse real-world applications including economics, political science and computer science. A problem is cast as a ``game'' and the objective is to find a solution whereby each ``player'' makes choices to maximise her own \textit{utility}.%, which may often be in conflict with those of her opponent.
+Security resource allocation and scheduling problems comprise one of many application areas recently been shown to benefit from game-theoretic approaches. As a solid mathematical framework to model strategic decision making, game theory has proved useful in  diverse real-world applications including economics, political science and computer science. A problem is cast as a ``game'' and the objective is to find a solution whereby each ``player'' makes choices to maximise her own \textit{utility}. %, which may often be in conflict with those of her opponent.
  A ``security game'' corresponds to a competition between a defender and an attacker. To solve a security game, all possible actions (attacks and defences) of the two players are enumerated, and for each pair of actions a utility is assigned to each player. In cases where the outcomes are known, game-theoretic approaches have provided impressive results. Since 2007, the so-called ARMOR software \cite{pita2008deployed} has been used at Los Angeles International Airport to  determine checkpoints on roadways leading to the airport, and to determine canine patrol routes within terminals. Similar deployments have been made by the US Federal Air Marshals, the US coast guard, and to design the Los Angeles Metro system's fare inspection strategy\cite{tsai2009iris,shieh2012protect,yin2012trusts}. 
 
 
@@ -21,7 +21,6 @@ A severe limitation of these models is that they assume the utility functions to
 %However, the data from which these values can be obtained are usually scarce and the error in expert guesses may be high, rendering the security game solver useless. 
 %A common example is when the players cannot completely foresee the outcome of some of her actions, or is bound to ignore what utilities her opponent is aiming to maximise. For instance, the exact efficacy of check-points or the drug smugglers' routes at an airport may be unknown. 
 %Indeed, an important observation, forming the basis of this grant proposal, is that this {\em learning} problem lying at the heart of security games can be solved using carefully designed machine learning techniques. 
-
 Therefore it is extremely important to use methods that can quickly collect the most relevant data  in order to estimate the parameters of the game and quickly reach excellent performance.
 
 
@@ -34,7 +33,7 @@ Therefore it is extremely important to use methods that can quickly collect the 
 %Finally the \textit{robustness}  is a key issue in security games. We propose to insure robustness in  three different ways. First, one can be  very conservative and assume that an adversary actually chooses (in the most adversarial way) the data that we do not know. Second, we introduce offline learning  where the test and the learning happen  before the strategies is actually use in the real world. Third, we might be required to learn defence strategies that do not possess large variances in their performance.
 
 
-This project will deploy approaches of { statistics} and { machine learning} to security games  played repeatedly between a defender and attackers. Repeated security games allow for collection of data, which can in turn be used to estimate the game and influence future behaviour. %Another possibility is in fact that the defender can in turn test the game and collect (in the most efficient and less costly manner) more information about the game. 
+This project will deploy approaches of {statistics} and {machine learning} to security games  played repeatedly between a defender and attackers. Repeated security games allow for collection of data, which can in turn be used to estimate the game and influence future behaviour. %Another possibility is in fact that the defender can in turn test the game and collect (in the most efficient and less costly manner) more information about the game. 
 Our key objective is to design efficient and theoretically sound, data-driven methods that can actively interact with the environment to {\em learn} and {\em act} in security games of realistic scales, which must therefore be \textit{practical}, \textit{scalable} and \textit{robust}. 
 
  
@@ -82,7 +81,6 @@ and optimisation. %(to efficiently select appropriate actions).
 %It has proven to make a difference in practice and has nice mathematical background. We want to focus here on two particular methods that are interesting in machine learning and where Victor and David are experts.
 %First, many interesting sequential decision-making tasks can be formulated as reinforcement learning (RL) problems. In RL, an agent interacts with a dynamic, stochastic, and incompletely known environment with the goal of learning a strategy or \textit{policy} to optimize some measure of its long-term performance (e.g.,~to remove as many lines as possible in Tetris).
 %talk very quickly about MDP POMDP tree search?
-
 A fundamental problem in machine learning is the \textit{multi-armed bandit}. It is a one-player repeated game in which, on iteration $t$, the player selects action $i(t)$ and receives reward $l_t$, a random variable with expectation $a_{i(t)}$.  An important constraint is that the player does not observe the reward that would have been collected had another action been selected instead.  Solutions to this problem have found many practical applications from adaptive routing in a network, to web advertising, to clinical trials\cite{bubeck2012regret}.
 %A multi-armed bandit is precisely a game as described above, but where the attacker has only one action; the bandit problem results when the game is repeated, and on iteration $t$ the learner selects action $i(t)$ and received a reward $l_t$ which is a random variable with expectation equal to $\boldsymbol A_{i_t,1}$.
 
