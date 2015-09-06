@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.16)  6 SEP 2015 20:03
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.16)  6 SEP 2015 21:43
 entering extended mode
 **C:/Users/Madsl/Documents/GitHub/Gabillon2Lancaster/Application.tex
 (C:/Users/Madsl/Documents/GitHub/Gabillon2Lancaster/Application.tex
@@ -1454,7 +1454,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <4.015> on input line 17.
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 116--127
+Underfull \hbox (badness 10000) in paragraph at lines 122--133
 
  []
 
@@ -1551,11 +1551,11 @@ Package logreq Info: Writing requests to 'Application.run.xml'.
 Here is how much of TeX's memory you used:
  26391 strings out of 493921
  487308 string characters out of 3144876
- 776913 words of memory out of 3000000
+ 777913 words of memory out of 3000000
  29075 multiletter control sequences out of 15000+200000
  110397 words of font info for 89 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,13n,72p,2225b,1481s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,72p,2205b,1481s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/
@@ -1577,7 +1577,7 @@ fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Application.pdf (20 pages, 503314 bytes).
+Output written on Application.pdf (20 pages, 503323 bytes).
 PDF statistics:
  353 PDF objects out of 1000 (max. 8388607)
  103 named destinations out of 1000 (max. 500000)
