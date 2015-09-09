@@ -1,18 +1,40 @@
-My primary research interest involves the mathematical investigation of machine learning techniques to create algorithms that, in some way, adapts to its users, or more generally learns from its environment. The approach is both theoretical and application oriented. A major objective is to ensure the proposed algorithms capture the real complexity of a problem and to study  their scalability towards real-world applications. 
+%My primary research interest involves the mathematical investigation of machine learning techniques to create algorithms that, in some way, adapts to its users, or more generally learns from its environment. The approach is both theoretical and application oriented. A major objective is to ensure the proposed algorithms capture the real complexity of a problem and to study  their scalability towards real-world applications. 
 
-During my PhD, I investigated \textit{reinforcement learning}  which is a field where an agent has to learn from its environment in order to maximise some measure of long-term performance. More precisely, the focus was on a class of algorithms called ``Classification-based Policy Iteration'' (CBPI) which are algorithms that learn directly the policies as output of a classifier. Thus they avoid, as in the standard RL techniques, to directly rely on  value function as the approximation of these is sometime poorer than the policy approximation. To improve the CBPI sample-efficiency, I proposed new hybrid approaches using both value function and policy approximations in the CBPI framework that leverage the benefits of both approaches (which led to two publications in ICML 2011 \& 2012 while a journal paper has been published in JMLR). Moreover, we applied our techniques in the game of Tetris, a domain where RL techniques had obtained poor results, and learned a controller removing on average 50.000.000 lines (the best in the literature, to the best of our knowledge which is reported in a paper in NIPS 2013).
+%During my PhD, I investigated \textit{reinforcement learning}  which is a field where an agent has to learn from its environment in order to maximise some measure of long-term performance. More precisely, the focus was on a class of algorithms called ``Classification-based Policy Iteration'' (CBPI) which are algorithms that learn directly the policies as output of a classifier. Thus they avoid, as in the standard RL techniques, to directly rely on  value function as the approximation of these is sometime poorer than the policy approximation. To improve the CBPI sample-efficiency, I proposed new hybrid approaches using both value function and policy approximations in the CBPI framework that leverage the benefits of both approaches (which led to two publications in ICML 2011 \& 2012 while a journal paper has been published in JMLR). Moreover, we applied our techniques in the game of Tetris, a domain where RL techniques had obtained poor results, and learned a controller removing on average 50.000.000 lines (the best in the literature, to the best of our knowledge which is reported in a paper in NIPS 2013).
 
-I also investigated \textit{bandit problems}. Bandit problems are the core mathematical formulation for modelling of adaptive and sequential decision-making. My interest was to design algorithms that solve challenging combinatorial problems. A first step has been to tackle the case of parallel bandit problems (which led to two publications in NIPS 2011 \& 2012). As a post-doctorate, I am currently studying the extension  to more general and challenging combinatorial settings. 
-Moreover, I also  made use of the bandit approach to prospose new solutions to industry problems during two of my internships. During my research internship  at Technicolor Labs, while trying to improve the questionnaire asked to elicit movie preferences of users for a recommendation website, a combinatorial learning problem arose. We designed a scalable bandit algorithms by using the submodular property that naturally arises in this problem (this led to a publication in NIPS 2013 \& AAAI 2014). During my master internship I proposed a combination of bandits techniques with linear programming to design an ad server software for the Orange Telecommunications company that takes into account limited budget constraint other various ad categories (the subsequent publication was awarded a best paper award in a French conference).  My research also involves more theoretical objectives. As a postodoctoral fellow,  I currently investigate the fundamental learning limits of the non-stochastic (adversarial) combinatorial bandit problem. The goal is to give a simple formulation of this bandit game that admits an exact minimax solution. Seen as a two-player game this problem is very closely connected to game theory that we are investigating (a subject also very relevant to this proposal).
+%I also investigated \textit{bandit problems}. Bandit problems are the core mathematical formulation for modelling of adaptive and sequential decision-making. My interest was to design algorithms that solve challenging combinatorial problems. A first step has been to tackle the case of parallel bandit problems (which led to two publications in NIPS 2011 \& 2012). As a post-doctorate, I am currently studying the extension  to more general and challenging combinatorial settings. 
+%Moreover, I also  made use of the bandit approach to prospose new solutions to industry problems during two of my internships. During my research internship  at Technicolor Labs, while trying to improve the questionnaire asked to elicit movie preferences of users for a recommendation website, a combinatorial learning problem arose. We designed a scalable bandit algorithms by using the submodular property that naturally arises in this problem (this led to a publication in NIPS 2013 \& AAAI 2014). During my master internship I proposed a combination of bandits techniques with linear programming to design an ad server software for the Orange Telecommunications company that takes into account limited budget constraint other various ad categories (the subsequent publication was awarded a best paper award in a French conference).  My research also involves more theoretical objectives. As a postodoctoral fellow,  I currently investigate the fundamental learning limits of the non-stochastic (adversarial) combinatorial bandit problem. The goal is to give a simple formulation of this bandit game that admits an exact minimax solution. Seen as a two-player game this problem is very closely connected to game theory that we are investigating (a subject also very relevant to this proposal).
 
 %Through the experiences already described I developed my ability to work in a team environment. The international conferences, internships and summer schools I have been attending gave me the opportunity to learn and exchange with researchers from diverse horizons. In addition, teaching computer science (Algorithmic with Python \& Databases) for Master and Licence students keeps enriching my communication skills. I build up my programming skills through my curriculum in a telecommunication engineering school and later through the lectures and practical sections I gave. Moreover most of my projects have involved programming part which have made me comfortable with coding in Python and  C++.
 
 %y long term career goal is to become a  researcher.  I wish to gain professional experience at an environment that will allow me to expand my knowledge and capabilities through collaborations with researchers who can mentor and inspire me. I am confident that the Lancaster University will provide me with such an environment and much more. It fits my willingness to  lead research that can find real applications, particularly in artificial intelligence for games or robotic purpose (as I already worked on the Tetris game. I believe that my background in Machine Learning will permit me to take on Lancaster University on designing powerful secutity program. 
+My primary research interests have been the mathematical investigation of machine learning techniques to create algorithms that adapt to their users or, more generally, actively {\em learn} from the environment, with minimal human supervision. 
+My vision is to bring the benefits of mathematical machine learning to everyday lives. To this end, 
+I aim to propose theoretically sound and practically feasible algorithms that capture the real complexity of a problem, 
+while studying their scalability towards real-world applications. 
+
+
+\subsection{Reinforcement Learning} As part of my PhD studies, I worked on Reinforcement Learning (RL) algorithms. In RL, an algorithm is considered as an {\em agent} who interacts with a dynamic, stochastic, and
+incompletely known environment with the goal of {\em learning} a strategy or policy to optimize some measure of its long-term performance (e.g., to remove as many lines as possible in a Tetris game). RL techniques have given impressive results in such domains as call admission control, helicopter flight control, catalog mailing, and managing spoken dialogue systems.
+ 
+I focused on a class of RL algorithms called ``Classification-based Policy Iteration'' (CBPI) which use classification methods to obtain optimal strategies (policies) by which to automatically act in an environment. Unlike standard RL methods, CBPI techniques do not rely on the approximation of the so-called value function. Since, in a large class of real-world problems, the quality of value function approximation is poor, this makes CBPI methods more desirable in applications.
+
+However, CBPI approaches suffered from a severe limitation, namely, that of poor sample complexity. To address this issue, I proposed new hybrid methods using both value function and policy approximations in the CBPI framework, that leverage the benefits of both approaches. My efforts resulted in the publication of two peer-reviewed papers at the prestigious International Conference on Machine Learning (ICML 2011 \& 2012), and a peer-reviewed journal paper in the Journal of Machine Learning Research (JMLR). From a more practical perspective, I applied my techniques to create the first machine to automatically learn and efficiently play the game of Tetris. This is particularly interesting, especially since existing RL methods had previously obtained poor results when addressing this problem. These results have in turn been peer-reviewed and published in another reputable international machine learning conference, namely, the Neural Information Processing Systems (NIPS, 2013). The code for testing RL methods at the game of Tetris has been publicly released and has since been used by two other international teams.
+\subsection{Bandit Algorithms}
+Bandit problems form the core mathematical formulation for modelling adaptive and sequential decision-making. Another aspect of my PhD research was to design algorithms that solve challenging combinatorial bandit problems. As a first step, I tackled the case of parallel bandit problems. This gave rise to two publications, i.e. (NIPS, 2011 \& 2012). My interests in this domain have also carried over to my postdoctoral research, where I study an extension of these results under more general and challenging combinatorial settings. 
+
+Through two productive R\&D internships, I also managed to bring the benefits of bandit theory to the industry. 
+At Technicolor Inc.'s research laboratories, while trying to improve the quality of a movie recommender system, a combinatorial learning problem arose. We designed a scalable bandit algorithm which makes use of the inherent submodular property of the problem. This led to two important publications at (NIPS, 2013) and at the international conference of the Association for the Advancement of Artificial Intelligence (AAAI, 2014). During my master's internship I proposed a combination of bandit techniques with linear programming to design an ad-server software for Orange Telecommunications Inc., taking into account the limited available budget corresponding to the number of paid displays for each ad contract. This resulted in a publication at the 
+French conference on Data Extraction and Knowledge Management (EGC, 2010) which also received an award for the best paper. 
+
+From a more theoretical perspective, I currently investigate the fundamental learning limits of the non-stochastic (adversarial) combinatorial bandit problem. The goal is to give a simple formulation of this bandit game that admits an exact minimax solution. Seen as a two-player game this problem is very closely connected to game theory that we are investigating (a subject also relevant to this proposal).
+
+
  \begin{center} \textbf{Curriculum Vitae of the Applicant,  Victor Gabillon}  \end{center}
  
 \noindent\textbf{Education}\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\[.1cm]
 \noindent\begin{tabularx}{\columnwidth}{@{} l X @{}}
-\noindent\textbf{PhD in Computer Science} (Accessit Award of the AI French Association, AFIA)& \hfill \textbf{June 2014} \\
+\noindent\textbf{PhD in Computer Science} (Accessit Award of the AI French Association, AFIA)& \hfill \textbf{Jun 2014} \\
 Team SequeL, INRIA Lille - Nord Europe, France\\
 %Defended on June 12, 2014\\
 \textit{Title:} ``Budgeted Classification-based Policy Iteration''\\
@@ -30,52 +52,77 @@ Team SequeL, INRIA Lille - Nord Europe, France\\
 \noindent\textbf{Professional Activities}\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\[.1cm]
 \noindent\textbf{Postdoctoral Research Fellow in Statistics} \textit{full time } \hfill \textbf{Nov 2014 -- ongoing} \\
 \textit{Supervisor:} Peter Bartlett\\
-School of Mathematical Sciences, Queensland University of Technology, Brisbane, Australia\\
-\noindent\textbf{PhD Researcher} \textit{full time } \hfill \textbf{Oct 2009 -- June 2014}\\
+Funded by the School of Mathematical Sciences, Queensland University of Technology, Brisbane, Australia\\
+Co-hosted in Berkeley University, Department of Statistics, USA\\
+\noindent\textbf{PhD Researcher} \textit{full time } \hfill \textbf{Oct 2009 -- Jun 2014}\\
 Team SequeL, INRIA Lille - Nord Europe, France\\
 \textbf{Research Engineer}  \textit{full time }  \hfill \textbf{ Mar 2013 -- Sep 2013}\\
-Technicolor Research Group, Palo Alto, USA.\\
-\textbf{External Lecturer} \textit{part time } \hfill \textbf{ Fall 2012}\\
-Lille 1 University, France\\
-\textbf{External Lecturer} \textit{part time }\hfill \textbf{2010 -- 2011  }\\
-Lille 3 University, France\\ 
-\textbf{Research Engineer}  \textit{full time }  \hfill \textbf{ June 2008 -- Sep 2008}\\
-Chinese Academy of Science, Beijing, China.\\[.2cm] 
+Technicolor Inc. Research Group, Palo Alto, USA\\
+\textbf{External Lecturer} \textit{part time }\hfill \textbf{2010 -- 2012  }\\
+University of Lille, France\\ 
+\textbf{Research Engineer}  \textit{full time }  \hfill \textbf{ Jun 2008 -- Sep 2008}\\
+Chinese Academy of Science, Beijing, China\\[.2cm] 
 
 \noindent\textbf{Awards \& Grants}\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\[.1cm]
-\noindent\textbf{Second place award for the best French PhD in Artificial Intelligence }  \hfill \textbf{June 2015}\\
-Award from AFIA, the French Association for Artificial Intelligence.\\
+\noindent\textbf{Second place award for the best French PhD in Artificial Intelligence }  \hfill \textbf{Jun 2015}\\
+Award from AFIA, the French Association for Artificial Intelligence\\
 \noindent\textbf{Postdoctoral Research Fellowship in Statistics} \hfill \textbf{Nov 2014} \\
 Two-year fellowship funded by the Queensland University of Technology\\
 \textbf{Best applied paper award}  \hfill \textbf{ Jan 2010}\\
-Award from the EGC conference, French speaking conference on knowledge mining and management.\\
+Award from the French conference on Data Extraction and Knowledge Management (EGC)\\
 \textbf{PhD Grant}  \hfill \textbf{ Oct 2009}\\
-Three-year grant funded by the French Ministry of Research\\[.2cm]
+Funded by the French Ministry of Research\\[.2cm]
+
+
 
 \noindent\textbf{Research Expeditions}\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\[.1cm]
-\noindent\textbf{3 months at Berkeley Statistic Departement, USA} \hfill \textbf{Mar -- June 2015} \\
+\noindent\textbf{3 months at Berkeley Statistic Departement, USA} \hfill \textbf{Mar -- Jun 2015} \\
 Hosted by Peter Bartlett\\
-\noindent\textbf{One week at Inria Nancy-Grand Est, France} \hfill \textbf{June 2012} \\
-Hosted by Bruno Scherrer of the team Maia\\
+\noindent\textbf{One week at Inria Nancy-Grand Est, France} \hfill \textbf{Jun 2012} \\
+Hosted by Bruno Scherrer\\
 
+\newpage
 \noindent\textbf{Peer Reviewer}\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\[.1cm]
-I have been an official reviewer for the Neural Information Processing Systems (NIPS) international conference in 2014 and 2015 and I have reviewed papers for the Machine Learning Jounal and the Journal of Machine Leaning Research (JMLR).\\
-
+%I have been an official reviewer for the Neural Information Processing Systems (NIPS) international conference in 2014 and 2015 and I have reviewed papers for the Machine Learning Journal and the Journal of Machine Leaning Research (JMLR).\\
+I am an official reviewer for the \textbf{Neural Information Processing Systems (NIPS)} international conference. I also actively review submissions to the \textbf{Journal of Machine Leaning Research (JMLR)} and the \textbf{Machine Learning} journal.\\
 
 \noindent 
 \textbf{Invited Presentations}
 \\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\[.1cm]
-\textbf{\textit{Talks other than Conference presentations}}\\
-\textbf{Talk} Oxford Robotics Research Group Seminar, Oxford, UK, May 2014\\
- ``Classification-Based Policy Iteration perform well in the game of Tetris''.\\
-\noindent \textbf{Talk} Gatsby Reinforcement Learning Research Group, London, UK, May 2014\\
- ``Classification-Based Policy Iteration perform well in the game of Tetris''.
+\textbf{\textit{Talks other than conference presentations}}\\
+\textbullet~ Oxford Robotics Research Group Seminar, Oxford, UK, May 2014, 
+ ``Classification-Based Policy Iteration performs well in the game of Tetris''\\
+\noindent \textbullet~  Gatsby Reinforcement Learning Research Group, London, UK, May 2014, 
+ ``Classification-Based Policy Iteration performs well in the game of Tetris''
   
-\noindent \textbf{Talk} Team Maia Seminar, Nancy, France, June 2012\\
- ``Pure Exploration Bandits''.
+\noindent \textbullet~ Team Maia Seminar, Nancy, France, June 2012, 
+ ``Pure Exploration Bandits''
  
-\noindent \textbf{Talk} Co-Adapt Seminars, Marseille, France,  May 2012\\
- ``Pure Exploration Bandits for Brain-Computer Interface?''.\\
+\noindent\textbullet~ Co-Adapt Seminars, Marseille, France,  May 2012, 
+ ``Pure Exploration Bandits for Brain-Computer Interface?''\\
+
+\noindent 
+\textbf{Major research achievements \& industrial innovations}
+\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}
+\begin{itemize}
+\item \textit{\textbf{Reinforcement Learning is Finally Competitive}}\textit{\text{(Research)}}\textbf{.} We proposed a new family of RL methods based on ``Classification-based Policy Iteration''. In addition to providing thorough theoretical analysis of these methods (see publications C3,C5), we also implemented the proposed algorithms and ran extensive experimental studies to analyse their performance using the game of Tetris as a benchmark (the experiments involved computing on a grid of computers). Our results show an unprecedented performance of RL methods in Tetris, improving upon the state-of-the-art techniques. Moreover, while these state-of-the-art techniques were based on black-box optimisation methods that require a large number of samples from the environment, our methods are able to learn Tetris strategies and achieve the same performance with 10 times less number of samples (see C8 in the Publications section).
+\item \textit{\textbf{Constrained Learning for Orange Telecommunication Inc.'s Ad-Server}}\textit{\text{(Industry)}}\textbf{.}
+Orange Telecommunications Inc., the leading company to provide telecommunication solutions in France, had made a contract with the research team SequeL in order to automate their online web-advertising services. My initial goal was to make a survey of the machine learning literature and find an appropriate solution to optimise their click-through rate revenues. This solution had to take into account specific new constraints on the limited and known number of display per ads. I proposed a new approach combining linear programming and bandit algorithms and validated its performance on synthetic data. The results received the best paper award at the French conference on Data Extraction and Knowledge Management (see C2). Moreover, the project initiated an ongoing collaboration between SequeL and Orange Telecommunications Inc.
+\item \textit{\textbf{Adaptive Questionnaire Design at Technicolor Inc.}}\textit{\text{(Industry)}}\textbf{.}
+During the course of my PhD, I participated in a 6-months R\&D internship program at Technicolor Inc.'s research lab. The primary goal of my project was to improve upon an online questionnaire which aimed to elicit users' movie preferences and generate a recommender system. I cast the program as an adaptive submodular maximisation problem. 
+The novelty of my approach was to consider a completely realistic formulation of the problem where the users' preferences were unknown and to be actively learned in order to build the adaptive questionnaire.  
+My efforts in this short period of time resulted in the publication of two peer-reviewed papers at prestigious international conferences in machine learning (see C7, C9). 
+\end{itemize}
+
+\newpage
+\noindent\textbf{Disseminations}\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\[.1cm]
+\noindent\textbf{Open-Source release of the Pure Exploration Code}  \\
+Software code in Python to compare the performance of the state-of-the-art methods for pure exploration problems. Available at http://victorgabillon.nfshost.com/publications.html\\
+\noindent\textbf{Open-Source release of the Tetris Code }  \\
+Software code in C++ to compare the performance of the state-of-the-art methods for the Game of Tetris.  The code can be deployed on a grid of computers using Message Passing Interface (MPI). This code has been used by two other international teams. Available at http://victorgabillon.nfshost.com/publications.html\\
+\noindent\textbf{Pedagogical Demonstration Video of CBPI algorithms in the games of Tetris }   \\
+Video showing how our new CBPI algorithms progressively learn through iterations.\\ Available at https://www.youtube.com/watch?v=WoKy-V-g5l4\\[.2cm]
+
 
 \noindent\textbf{Publications}\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\[.1cm]
 \textit{\textbf{Peer-reviewed journal article}}\\
@@ -123,22 +170,13 @@ C2. & Victor Gabillon, Jérémie Mary $\&$ Philippe Preux, \textbf{ \emph{Affich
 C1. & Jean-Pierre Delmas $\&$ Victor Gabillon,\textbf{ \emph{Asymptotic performance analysis of PCA algorithms based on the weighted subspace criterion}}.  ICASSP $2009$, International Conference on Acoustics, Speech and Signal Processing. Poster presentation at Taipei, Taiwan, April $2009$. 
    \end{tabularx}\\
 
+\newpage
 \noindent\textit{\textbf{Peer-reviewed workshop article}}\\
 \noindent\begin{tabularx}{\columnwidth}{@{} l X @{}}
  W1. & Victor Gabillon,  Alessandro Lazaric $\&$ Mohammad Ghavamzadeh, \textbf{ \emph{Rollout Allocation Strategies for Classification-based Policy Iteration}}. Workshop on Reinforcement Learning and Search in Very Large Spaces International Conference on Machine Learning,  Lecture presentation at Haifa, Israel, June $2010$.
   \end{tabularx}\\
   
   
-
-\noindent\textit{\textbf{Major research achievements \& industrial innovations}}\\[-.4cm]\noindent\makebox[\linewidth]{\rule{\columnwidth}{0.4pt}}\\ %[.1cm]
-\begin{itemize}
-\item \textit{\text{Research:}} \textit{\textbf{Reinforcement Learning is Finally Competitive:}} We proposed a new family of reinforcement learning methods based on ``Classification-based Policy Iteration'' algorithms. In addition to providing thorough theoretical analysis of these methods (C3,C5), we implemented the proposed algorithms and ran extensive experimental studies to analyse their performance using the game of Tetris as a benchmark (the experiments involved computing on a grid of computers). Our results show an unprecedented performance of reinforcement learning methods in Tetris, improving upon the state-of-the-art techniques. Moreover, while these state-of-the-art techniques were based on black-box optimisation methods that require a large number of samples from the environment, our methods are able to learn Tetris strategies and achieve the same performance with 10 times less number of samples (C8).
-\item \textit{\text{Industry:}} \textit{\textbf{Constrained Learning for Orange Ad Server:}} Orange, the leading company to provide telecommunication solutions in France, had made a contract with the research team SequeL in order to automate their online web-advertising services. My initial goal was to make a survey of the machine learning literature and find an appropriate solution to optimise their click-through rate revenues. This solution had to take into account specific new constraints on the limited and known number of display per ads. I proposed a new approach combining linear programming and bandit algorithms and validated its performance on synthetic data. The results received the best paper award at the French conference on Data Extraction and Knowledge Management (C2). Moreover, the project initiated an ongoing collaboration between SequeL and Orange.  
-\item \textit{\text{Industry:}} \textit{\textbf{Adaptive Questionnaire Design at Technicolor Inc:}} 
-During the course of my PhD, I participated in a 6-months R\&D internship program at Technicolor Inc.'s research lab. The primary goal of my project was to improve upon an online questionnaire which aimed to elicit users' movie preferences and generate a recommender system. I cast the program as an adaptive submodular maximisation problem. 
-The novelty of my approach was to consider a completely realistic formulation of the problem where the users' preferences were unknown and to be actively learned in order to build the adaptive questionnaire.  
-My efforts in this short period of time resulted in the publication of two peer-reviewed papers at prestigious international conferences in machine learning (C7, C9). 
-\end{itemize}
 
 
 
@@ -148,14 +186,13 @@ In the past 5 years I taught 216 hours of undergraduate and master's courses in 
  \begin{itemize} 
  \item\textit{Introduction to algorithmic and programming with Python.}\\
     $48$ hours (lectures and practical sessions). Winter 2010, Fall 2011 \& Fall 2012\\
-    $1^{rst}$ year of Master \textit{Computer science and document} at Lille $3$ University and  $1^{rst}$ year of Licence \textit{Physics-Chemistry} at Lille $1$ University.
+    $1^{rst}$ year of Master \textit{Computer science and document} at the University of Lille  and  $1^{rst}$ year of Licence \textit{Physics-Chemistry} at the University of Lille .
     \end{itemize}
 \textit{\textbf{Teaching assistant:}} 
 \begin{itemize}
  \item \textit{SQL and Python.} $36$ hours (practical sessions). Fall 2010.\\
-    $3^{rd}$ year of Licence \textit{Mathematics and computer science applied to social sciences} at Lille 3 University. 
+    $3^{rd}$ year of Licence \textit{Mathematics and computer science applied to social sciences} at the University of Lille. 
 \item \textit{Designing databases and object-oriented programming}.
     $36$ hours (practical sessions). Winter 2011.\\
-    $3^{rd}$ year of Licence \textit{Mathematics and computer science applied to social sciences} at Lille 3 University. 
+    $3^{rd}$ year of Licence \textit{Mathematics and computer science applied to social sciences} at the University of Lille. 
 \end{itemize}
-
