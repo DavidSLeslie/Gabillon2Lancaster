@@ -41,7 +41,7 @@ Our key objective is to design efficient and theoretically sound, data-driven me
  
 
 \subsubsection*{State-of-the-art}
-\textbf{Security meets Game Theory }
+\textbf{Security meets Game Theory. }
 %\TODO{better distinction between minimax nash stacjkelberg}
 From a game-theoretic perspective, a security problem is viewed as a two-player game that captures the interaction between a defender (e.g., border patrols, metro inspectors, network administrators) and attackers (e.g., terrorists/smugglers, illegal metro users, malicious cyber attackers). The action of the defender (attacker) is defined as selecting a subset of targets to protect (attack). For each defender/attacker action pair, \textit{utilities} are defined as the players' gain or loss, and the players' objectives are to maximise their own utility. %From the defender's perspective, this corresponds to efficiently allocating a limited number of resources to secure some predefined targets.
  The expected utilities for both players can be stored in two  matrices,  $\boldsymbol A$ for the defender,  $\boldsymbol B$ for the attacker. Entries $\boldsymbol A_{i,j}$ and  $\boldsymbol  B_{i,j}$  are the expected utilities for the defender and attacker, respectively, when the defender plays strategy $i$ and the attacker responds with strategy $j$.
@@ -55,7 +55,7 @@ It is this Stackelberg security game framework that will be considered in the pr
 
 %\noindent \textbf{\textit{\\Tools from Sequential decision-making under uncertainty}}\\
 
-\textbf{Uncertainty in Security Games}
+\textbf{Uncertainty in Security Games.}
 Most standard game-theoretical analyses assume that the payoff matrices are known in advance.  However uncertainty is endemic in most real-world applications. 
 %Unlike standard game-theoretical approaches, in some scenarios, the players is uncertain about their utilities (the $A_{i,j}$'s), or those of the other players'.
 For instance, the random selection of passengers for security checks at an airport is a source of uncertainty in this game, where  %the outcome is random and 
@@ -75,7 +75,7 @@ The repetition allows the defender to reduce her uncertainty about the world and
 %In the context of security games, the random selection of passengers for security checks at an airport is an example source of uncertainty in this game where the outcome is random and the probability of successful security enforcement  is unknown. 
 %In these applications, a security game solver is required to autonomously take intelligent decisions at repeated instances of the game, and must thus carefully gather, extract and act upon information from historical data. 
 %
-\textbf{Bandit Problems}
+\textbf{Bandit Problems.}
 Mathematical machine learning is a modern amalgamation of statistics %(to deal with uncertain data) 
 and optimisation. %(to efficiently select appropriate actions).   	
 %It has proven to make a difference in practice and has nice mathematical background. We want to focus here on two particular methods that are interesting in machine learning and where Victor and David are experts.
@@ -106,7 +106,7 @@ Bandit strategies are therefore important for active learning in security games.
 
 
 %\noindent \textbf{\textit{\\Frontiers of Security Games: From handling uncertainty towards self-learning algorithms}}\\
-\textbf{Existing Results}
+\textbf{Existing Results.}
 %An extensively litterature has tried to  devise security games methods that are robust with respect to uncertainty about the environment\cite{aghassi2006robust,Nguyen14RO, Kiekintveld:2013}.
 %Granick, for example,
 %argues that weaknesses in our understanding of the measurability of losses serve as
@@ -119,7 +119,7 @@ Recently, a more relevant analysis has been given\cite{Balcan15CR} for the case 
 
 %\textbf{Motivation.} %%%V what can I bring
 
-\noindent\textbf{Vision}
+\noindent\textbf{Vision.}
 %\noindent \textit{\textbf{\\Main Goal}}\\
 %The main issues that have been considered so far in the literature are scalability, the ability for the designed methods to handle problems with very large number of actions for the players, or devising strategies that take advantage of the attacker's potentially limited rationality or bounded memory\cite{tambe2012game}.
 The purpose of this project is to create \textit{practical}, \textit{scalable} and \textit{robust} methods for security games. First, we target \textit{practicality}  in the sense that our methods will be autonomous in handling uncertainty in the model and will actively reduce this uncertainty by interacting with the environment in which the game takes place during repeated plays of the game. %Our learning methods will take into account different feedback scenarios. 
